@@ -1,0 +1,1 @@
+sourceset_dependencies = '{":ViGRAM_SDK:dokkaHtmlPartial/debug":[],":ViGRAM_SDK:dokkaHtmlPartial/main":[],":ViGRAM_SDK:dokkaHtmlPartial/release":[]}'
