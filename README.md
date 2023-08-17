@@ -10,16 +10,6 @@ For more information, you can view the documentation using [this](https://viapps
 ## Topics
 ### What is the new on beta
 
-[1.2.0-beta1.2](readme_1.2.0-beta1.2.md)
-
-[1.2.0-beta2.1](readme_1.2.0-beta2.1.md)
-
-[1.2.0-beta3](readme_1.2.0-beta3.md)
-
-[1.2.1-beta1](readme_1.2.1-beta1.md)
-
-[1.2.1-beta1.2](readme_1.2.1-beta1.2.md)
-
 [1.2.1-beta2.1](readme_1.2.1-beta2.1.md)
 
 [1.2.1-beta2.2](readme_1.2.1-beta2.2.md)
