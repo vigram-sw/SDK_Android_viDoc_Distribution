@@ -1,495 +1,417 @@
-<!doctype html>
 <html>
-<head>
+  <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
     <title>Peripheral</title>
 <link href="../../../images/logo-icon.svg" rel="icon" type="image/svg"><script>var pathToRoot = "../../../";</script>    <script>const storage = localStorage.getItem("dokka-dark-mode")
-    if (storage == null) {
-        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
-        if (osDarkSchemePreferred === true) {
-            document.getElementsByTagName("html")[0].classList.add("theme-dark")
-        }
-    } else {
-        const savedDarkMode = JSON.parse(storage)
-        if(savedDarkMode === true) {
-            document.getElementsByTagName("html")[0].classList.add("theme-dark")
-        }
-    }
-    </script>
-<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async></script>
-<link href="../../../styles/style.css" rel="Stylesheet">
-<link href="../../../styles/jetbrains-mono.css" rel="Stylesheet">
-<link href="../../../styles/main.css" rel="Stylesheet">
-<link href="../../../styles/prism.css" rel="Stylesheet">
-<link href="../../../styles/logo-styles.css" rel="Stylesheet">
-<script type="text/javascript" src="../../../scripts/clipboard.js" async></script>
-<script type="text/javascript" src="../../../scripts/navigation-loader.js" async></script>
-<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async></script>
-<script type="text/javascript" src="../../../scripts/main.js" defer></script>
-<script type="text/javascript" src="../../../scripts/prism.js" async></script>
-<script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer></script></head>
-<body>
-<div class="navigation-wrapper" id="navigation-wrapper">
-    <div id="leftToggler"><span class="icon-toggler"></span></div>
-    <div class="library-name">
-<a href="../../../index.html">
-<span>VigramSDK</span>            </a>    </div>
-    <div>
-    </div>
-    <div class="pull-right d-flex">
-        <div class="filter-section" id="filter-section">
-                <button class="platform-tag platform-selector jvm-like" data-active="" data-filter=":ViGRAM_SDK:dokkaHtmlPartial/release">androidJvm</button>
-        </div>
-        <button id="theme-toggle-button"><span id="theme-toggle"></span></button>
+const savedDarkMode = storage ? JSON.parse(storage) : false
+if(savedDarkMode === true){
+    document.getElementsByTagName("html")[0].classList.add("theme-dark")
+}</script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async="async"></script><link href="../../../styles/style.css" rel="Stylesheet"><link href="../../../styles/jetbrains-mono.css" rel="Stylesheet"><link href="../../../styles/main.css" rel="Stylesheet"><link href="../../../styles/prism.css" rel="Stylesheet"><link href="../../../styles/logo-styles.css" rel="Stylesheet"><script type="text/javascript" src="../../../scripts/clipboard.js" async="async"></script><script type="text/javascript" src="../../../scripts/navigation-loader.js" async="async"></script><script type="text/javascript" src="../../../scripts/platform-content-handler.js" async="async"></script><script type="text/javascript" src="../../../scripts/main.js" defer="defer"></script><script type="text/javascript" src="../../../scripts/prism.js" async="async"></script>  </head>
+  <body>
+    <div class="navigation-wrapper" id="navigation-wrapper">
+      <div id="leftToggler"><span class="icon-toggler"></span></div>
+      <div class="library-name"><a href="../../../index.html">ViGRAM_SDK</a></div>
+      <div>1.2.0</div>
+      <div class="pull-right d-flex"><button id="theme-toggle-button"><span id="theme-toggle"></span></button>
         <div id="searchBar"></div>
+      </div>
     </div>
-</div>
-<div id="container">
-    <div id="leftColumn">
+    <div id="container">
+      <div id="leftColumn">
         <div id="sideMenu"></div>
-    </div>
-    <div id="main">
-<div class="main-content" data-page-type="classlike" id="content" pageids="ViGRAM_SDK::com.vigram.sdk.Peripheral/Peripheral///PointingToDeclaration//1803641070">
-  <div class="breadcrumbs"><a href="../../index.html">ViGRAM_SDK</a><span class="delimiter">/</span><a href="../index.html">com.vigram.sdk.Peripheral</a><span class="delimiter">/</span><span class="current">Peripheral</span></div>
-  <div class="cover ">
-    <h1 class="cover"><span><span>Peripheral</span></span></h1>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ViGRAM_SDK:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">interface </span><a href="index.html">Peripheral</a></div><p class="paragraph">Peripheral provides a write and receive interface to communicate with the viDoc device. Device and NMEA messages can be observed and binary messages can be sent using the <code class="lang-kotlin">`send(_:chunkSize:)`</code> method.</p><h4 class="">Inheritors</h4><div class="table"><div class="table-row" data-filterable-current=":ViGRAM_SDK:dokkaHtmlPartial/release" data-filterable-set=":ViGRAM_SDK:dokkaHtmlPartial/release"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="../-default-peripheral/index.html">DefaultPeripheral</a></div></span></div><div></div></div></div></div></div></div>
-  </div>
-  <div class="tabbedcontent">
-    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button></div>
-    <div class="tabs-section-body">
-      <div data-togglable="FUNCTION">
-        <h2 class="">Functions</h2>
-        <div class="table"><a data-name="-288760693%2FFunctions%2F1803641070" anchor-label="activateAllConstellationGNSS" id="-288760693%2FFunctions%2F1803641070" data-filterable-set=":ViGRAM_SDK:dokkaHtmlPartial/release"></a>
-          <div class="table-row" data-filterable-current=":ViGRAM_SDK:dokkaHtmlPartial/release" data-filterable-set=":ViGRAM_SDK:dokkaHtmlPartial/release">
-            <div class="main-subrow keyValue ">
-              <div class=""><span class="inline-flex">
-                  <div><a href="activate-all-constellation-g-n-s-s.html"><span>activate</span><wbr><span>All</span><wbr><span>Constellation</span><wbr><span><span>GNSS</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-288760693%2FFunctions%2F1803641070"></span>
-                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                  </span></span></div>
-              <div>
-                <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ViGRAM_SDK:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="activate-all-constellation-g-n-s-s.html"><span class="token function">activateAllConstellationGNSS</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">callback<span class="token operator">: </span><a href="../../com.vigram.sdk.Modules/index.html#2030133080%2FClasslikes%2F1803641070">Callback1</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../com.vigram.sdk.Models.UBXMessages/-a-c-k-message/index.html">ACKMessage</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Activate GNSS Constellation for all satellite</p></div></div></div>
+      </div>
+      <div id="main">
+        <div class="main-content" id="content" pageIds="ViGRAM_SDK::com.vigram.sdk.Peripheral/Peripheral///PointingToDeclaration//1818122103">
+          <div class="breadcrumbs"><a href="../../../index.html">ViGRAM_SDK</a>/<a href="../index.html">com.vigram.sdk.Peripheral</a>/<a href="index.html">Peripheral</a></div>
+          <div class="cover ">
+            <h1 class="cover"><span><span>Peripheral</span></span></h1>
+            <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":ViGRAM_SDK:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">interface </span><a href="index.html">Peripheral</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><p class="paragraph">Peripheral provides a write and receive interface to communicate with the viDoc device. Device and NMEA messages can be observed and binary messages can be sent using the <code class="lang-kotlin">`send(_:chunkSize:)`</code> method.</p></div></div>
+          </div>
+          <div class="tabbedcontent">
+            <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="Functions">Functions</button><button class="section-tab" data-togglable="Inheritors">Inheritors</button></div>
+            <div class="tabs-section-body">
+              <h2 class="">Functions</h2>
+              <div class="table" data-togglable="Functions"><a data-name="-288760693%2FFunctions%2F1818122103" anchor-label="activateAllConstellationGNSS" id="-288760693%2FFunctions%2F1818122103" data-filterable-set=":ViGRAM_SDK:dokkaHtml/release"></a>
+                <div class="table-row" data-filterable-current=":ViGRAM_SDK:dokkaHtml/release" data-filterable-set=":ViGRAM_SDK:dokkaHtml/release">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex">
+                        <div><a href="activate-all-constellation-g-n-s-s.html"><span>activate</span><wbr></wbr><span>All</span><wbr></wbr><span>Constellation</span><wbr></wbr><span><span>GNSS</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-288760693%2FFunctions%2F1818122103"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title">
+                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":ViGRAM_SDK:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="activate-all-constellation-g-n-s-s.html"><span class="token function">activateAllConstellationGNSS</span></a><span class="token punctuation">(</span>callback<span class="token operator">: </span><a href="../../com.vigram.sdk.Modules/index.html#2030133080%2FClasslikes%2F1818122103">Callback1</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../com.vigram.sdk.Models.UBXMessages/-a-c-k-message/index.html">ACKMessage</a><span class="token operator">&gt;</span><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">Activate GNSS Constellation for all satellite</p></div></div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="8570950%2FFunctions%2F1818122103" anchor-label="changeStatusGNSS" id="8570950%2FFunctions%2F1818122103" data-filterable-set=":ViGRAM_SDK:dokkaHtml/release"></a>
+                <div class="table-row" data-filterable-current=":ViGRAM_SDK:dokkaHtml/release" data-filterable-set=":ViGRAM_SDK:dokkaHtml/release">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex">
+                        <div><a href="change-status-g-n-s-s.html"><span>change</span><wbr></wbr><span>Status</span><wbr></wbr><span><span>GNSS</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="8570950%2FFunctions%2F1818122103"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title">
+                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":ViGRAM_SDK:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="change-status-g-n-s-s.html"><span class="token function">changeStatusGNSS</span></a><span class="token punctuation">(</span>satellite<span class="token operator">: </span><a href="../../com.vigram.sdk.SatelliteCommands/-navigation-system-type/index.html">NavigationSystemType</a><span class="token punctuation">, </span>activate<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token punctuation">, </span>callback<span class="token operator">: </span><a href="../../com.vigram.sdk.Modules/index.html#2030133080%2FClasslikes%2F1818122103">Callback1</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../com.vigram.sdk.Models.UBXMessages/-a-c-k-message/index.html">ACKMessage</a><span class="token operator">&gt;</span><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">Enable/Disable of GNSS Constellation to selected satellite.</p></div></div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="-2138540783%2FFunctions%2F1818122103" anchor-label="changeStatusNAVDOP" id="-2138540783%2FFunctions%2F1818122103" data-filterable-set=":ViGRAM_SDK:dokkaHtml/release"></a>
+                <div class="table-row" data-filterable-current=":ViGRAM_SDK:dokkaHtml/release" data-filterable-set=":ViGRAM_SDK:dokkaHtml/release">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex">
+                        <div><a href="change-status-n-a-v-d-o-p.html"><span>change</span><wbr></wbr><span>Status</span><wbr></wbr><span><span>NAVDOP</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2138540783%2FFunctions%2F1818122103"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title">
+                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":ViGRAM_SDK:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="change-status-n-a-v-d-o-p.html"><span class="token function">changeStatusNAVDOP</span></a><span class="token punctuation">(</span>activate<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token punctuation">, </span>callback<span class="token operator">: </span><a href="../../com.vigram.sdk.Modules/index.html#2030133080%2FClasslikes%2F1818122103">Callback1</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../com.vigram.sdk.Models.UBXMessages/-a-c-k-message/index.html">ACKMessage</a><span class="token operator">&gt;</span><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">Enable/Disable NAV-DOP messages</p></div></div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="960474810%2FFunctions%2F1818122103" anchor-label="changeStatusNAVPVT" id="960474810%2FFunctions%2F1818122103" data-filterable-set=":ViGRAM_SDK:dokkaHtml/release"></a>
+                <div class="table-row" data-filterable-current=":ViGRAM_SDK:dokkaHtml/release" data-filterable-set=":ViGRAM_SDK:dokkaHtml/release">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex">
+                        <div><a href="change-status-n-a-v-p-v-t.html"><span>change</span><wbr></wbr><span>Status</span><wbr></wbr><span><span>NAVPVT</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="960474810%2FFunctions%2F1818122103"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title">
+                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":ViGRAM_SDK:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="change-status-n-a-v-p-v-t.html"><span class="token function">changeStatusNAVPVT</span></a><span class="token punctuation">(</span>activate<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token punctuation">, </span>callbackACK<span class="token operator">: </span><a href="../../com.vigram.sdk.Modules/index.html#2030133080%2FClasslikes%2F1818122103">Callback1</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../com.vigram.sdk.Models.UBXMessages/-a-c-k-message/index.html">ACKMessage</a><span class="token operator">&gt;</span><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">Enable/Disable NAV-PVT messages</p></div></div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="-275564034%2FFunctions%2F1818122103" anchor-label="configurationState" id="-275564034%2FFunctions%2F1818122103" data-filterable-set=":ViGRAM_SDK:dokkaHtml/release"></a>
+                <div class="table-row" data-filterable-current=":ViGRAM_SDK:dokkaHtml/release" data-filterable-set=":ViGRAM_SDK:dokkaHtml/release">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex">
+                        <div><a href="configuration-state.html"><span>configuration</span><wbr></wbr><span><span>State</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-275564034%2FFunctions%2F1818122103"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title">
+                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":ViGRAM_SDK:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="configuration-state.html"><span class="token function">configurationState</span></a><span class="token punctuation">(</span>callback<span class="token operator">: </span><a href="../../com.vigram.sdk.Modules/index.html#2030133080%2FClasslikes%2F1818122103">Callback1</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../-state-peripheral-configuration/index.html">StatePeripheralConfiguration</a><span class="token operator">&gt;</span><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">This method allows you to find out the status of the peripheral configuration</p></div></div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="1789882307%2FFunctions%2F1818122103" anchor-label="deviceMessages" id="1789882307%2FFunctions%2F1818122103" data-filterable-set=":ViGRAM_SDK:dokkaHtml/release"></a>
+                <div class="table-row" data-filterable-current=":ViGRAM_SDK:dokkaHtml/release" data-filterable-set=":ViGRAM_SDK:dokkaHtml/release">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex">
+                        <div><a href="device-messages.html"><span>device</span><wbr></wbr><span><span>Messages</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1789882307%2FFunctions%2F1818122103"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title">
+                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":ViGRAM_SDK:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="device-messages.html"><span class="token function">deviceMessages</span></a><span class="token punctuation">(</span>callback<span class="token operator">: </span><a href="../../com.vigram.sdk.Modules/index.html#2030133080%2FClasslikes%2F1818122103">Callback1</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../com.vigram.sdk.Models/-device-message/index.html">DeviceMessage</a><span class="token operator">&gt;</span><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">Device messages received from the peripheral.</p></div></div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="-113952586%2FFunctions%2F1818122103" anchor-label="disconnect" id="-113952586%2FFunctions%2F1818122103" data-filterable-set=":ViGRAM_SDK:dokkaHtml/release"></a>
+                <div class="table-row" data-filterable-current=":ViGRAM_SDK:dokkaHtml/release" data-filterable-set=":ViGRAM_SDK:dokkaHtml/release">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex">
+                        <div><a href="disconnect.html"><span><span>disconnect</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-113952586%2FFunctions%2F1818122103"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title">
+                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":ViGRAM_SDK:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="disconnect.html"><span class="token function">disconnect</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">Disconnecting from the peripheral device</p></div></div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="1835335431%2FFunctions%2F1818122103" anchor-label="getChangingRateOfMessages" id="1835335431%2FFunctions%2F1818122103" data-filterable-set=":ViGRAM_SDK:dokkaHtml/release"></a>
+                <div class="table-row" data-filterable-current=":ViGRAM_SDK:dokkaHtml/release" data-filterable-set=":ViGRAM_SDK:dokkaHtml/release">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex">
+                        <div><a href="get-changing-rate-of-messages.html"><span>get</span><wbr></wbr><span>Changing</span><wbr></wbr><span>Rate</span><wbr></wbr><span>Of</span><wbr></wbr><span><span>Messages</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1835335431%2FFunctions%2F1818122103"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title">
+                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":ViGRAM_SDK:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-changing-rate-of-messages.html"><span class="token function">getChangingRateOfMessages</span></a><span class="token punctuation">(</span>callback<span class="token operator">: </span><a href="../../com.vigram.sdk.Modules/index.html#2030133080%2FClasslikes%2F1818122103">Callback1</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../com.vigram.sdk.Models.UBXMessages/-a-c-k-message/index.html">ACKMessage</a><span class="token operator">&gt;</span><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">Get changing rate of navigation message</p></div></div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="-1552149402%2FFunctions%2F1818122103" anchor-label="getCurrentDynamicState" id="-1552149402%2FFunctions%2F1818122103" data-filterable-set=":ViGRAM_SDK:dokkaHtml/release"></a>
+                <div class="table-row" data-filterable-current=":ViGRAM_SDK:dokkaHtml/release" data-filterable-set=":ViGRAM_SDK:dokkaHtml/release">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex">
+                        <div><a href="get-current-dynamic-state.html"><span>get</span><wbr></wbr><span>Current</span><wbr></wbr><span>Dynamic</span><wbr></wbr><span><span>State</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1552149402%2FFunctions%2F1818122103"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title">
+                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":ViGRAM_SDK:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-current-dynamic-state.html"><span class="token function">getCurrentDynamicState</span></a><span class="token punctuation">(</span>callback<span class="token operator">: </span><a href="../../com.vigram.sdk.Modules/index.html#2030133080%2FClasslikes%2F1818122103">Callback1</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../com.vigram.sdk.SatelliteCommands/-dynamic-state/index.html">DynamicState</a><span class="token operator">&gt;</span><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">Get the current dynamic state</p></div></div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="533624286%2FFunctions%2F1818122103" anchor-label="getCurrentMinimumElevation" id="533624286%2FFunctions%2F1818122103" data-filterable-set=":ViGRAM_SDK:dokkaHtml/release"></a>
+                <div class="table-row" data-filterable-current=":ViGRAM_SDK:dokkaHtml/release" data-filterable-set=":ViGRAM_SDK:dokkaHtml/release">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex">
+                        <div><a href="get-current-minimum-elevation.html"><span>get</span><wbr></wbr><span>Current</span><wbr></wbr><span>Minimum</span><wbr></wbr><span><span>Elevation</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="533624286%2FFunctions%2F1818122103"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title">
+                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":ViGRAM_SDK:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-current-minimum-elevation.html"><span class="token function">getCurrentMinimumElevation</span></a><span class="token punctuation">(</span>callback<span class="token operator">: </span><a href="../../com.vigram.sdk.Modules/index.html#2030133080%2FClasslikes%2F1818122103">Callback1</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../com.vigram.sdk.SatelliteCommands/-elevation/index.html">Elevation</a><span class="token operator">&gt;</span><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">Get minimum Elevation for Satellites currently used in navigation</p></div></div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="592164050%2FFunctions%2F1818122103" anchor-label="getCurrentStatusGNSS" id="592164050%2FFunctions%2F1818122103" data-filterable-set=":ViGRAM_SDK:dokkaHtml/release"></a>
+                <div class="table-row" data-filterable-current=":ViGRAM_SDK:dokkaHtml/release" data-filterable-set=":ViGRAM_SDK:dokkaHtml/release">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex">
+                        <div><a href="get-current-status-g-n-s-s.html"><span>get</span><wbr></wbr><span>Current</span><wbr></wbr><span>Status</span><wbr></wbr><span><span>GNSS</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="592164050%2FFunctions%2F1818122103"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title">
+                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":ViGRAM_SDK:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-current-status-g-n-s-s.html"><span class="token function">getCurrentStatusGNSS</span></a><span class="token punctuation">(</span>satellite<span class="token operator">: </span><a href="../../com.vigram.sdk.SatelliteCommands/-navigation-system-type/index.html">NavigationSystemType</a><span class="token punctuation">, </span>callback<span class="token operator">: </span><a href="../../com.vigram.sdk.Modules/index.html#2030133080%2FClasslikes%2F1818122103">Callback1</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../com.vigram.sdk.Models.Satellite/-status-satellite/index.html">StatusSatellite</a><span class="token operator">&gt;</span><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">Get current status of GNSS Constellation to selected satellite.</p></div></div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="342337032%2FFunctions%2F1818122103" anchor-label="nmea" id="342337032%2FFunctions%2F1818122103" data-filterable-set=":ViGRAM_SDK:dokkaHtml/release"></a>
+                <div class="table-row" data-filterable-current=":ViGRAM_SDK:dokkaHtml/release" data-filterable-set=":ViGRAM_SDK:dokkaHtml/release">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex">
+                        <div><a href="nmea.html"><span><span>nmea</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="342337032%2FFunctions%2F1818122103"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title">
+                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":ViGRAM_SDK:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="nmea.html"><span class="token function">nmea</span></a><span class="token punctuation">(</span>callback<span class="token operator">: </span><a href="../../com.vigram.sdk.Modules/index.html#2030133080%2FClasslikes%2F1818122103">Callback1</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../com.vigram.sdk.Modules/-n-m-e-a-message/index.html">NMEAMessage</a><span class="token operator">&gt;</span><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">NMEA messages received from the peripheral. To provide an optimal use of the VigramSDK, the viDoc should be configured to send out NMEA-0183-GGA and NMEA-0183-GST messages.</p></div></div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="121640475%2FFunctions%2F1818122103" anchor-label="progressUpdateSoftware" id="121640475%2FFunctions%2F1818122103" data-filterable-set=":ViGRAM_SDK:dokkaHtml/release"></a>
+                <div class="table-row" data-filterable-current=":ViGRAM_SDK:dokkaHtml/release" data-filterable-set=":ViGRAM_SDK:dokkaHtml/release">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex">
+                        <div><a href="progress-update-software.html"><span>progress</span><wbr></wbr><span>Update</span><wbr></wbr><span><span>Software</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="121640475%2FFunctions%2F1818122103"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title">
+                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":ViGRAM_SDK:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="progress-update-software.html"><span class="token function">progressUpdateSoftware</span></a><span class="token punctuation">(</span>callbackState<span class="token operator">: </span><a href="../../com.vigram.sdk.Modules/index.html#2061152887%2FClasslikes%2F1818122103">Callback2</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../com.vigram.sdk.Models/-state-update-software/index.html">StateUpdateSoftware</a><span class="token punctuation">, </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">&gt;</span><span class="token punctuation">, </span>callbackProgress<span class="token operator">: </span><a href="../../com.vigram.sdk.Modules/index.html#2030133080%2FClasslikes%2F1818122103">Callback1</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html">Double</a><span class="token operator">&gt;</span><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">Progress update software.</p></div></div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="2130128894%2FFunctions%2F1818122103" anchor-label="requestBattery" id="2130128894%2FFunctions%2F1818122103" data-filterable-set=":ViGRAM_SDK:dokkaHtml/release"></a>
+                <div class="table-row" data-filterable-current=":ViGRAM_SDK:dokkaHtml/release" data-filterable-set=":ViGRAM_SDK:dokkaHtml/release">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex">
+                        <div><a href="request-battery.html"><span>request</span><wbr></wbr><span><span>Battery</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2130128894%2FFunctions%2F1818122103"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title">
+                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":ViGRAM_SDK:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="request-battery.html"><span class="token function">requestBattery</span></a><span class="token punctuation">(</span>callback<span class="token operator">: </span><a href="../../com.vigram.sdk.Modules/index.html#2030133080%2FClasslikes%2F1818122103">Callback1</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../com.vigram.sdk.Models/-device-message/-battery/index.html">DeviceMessage.Battery</a><span class="token operator">&gt;</span><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">Requests the battery level of the viDoc.</p></div></div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="-1028490924%2FFunctions%2F1818122103" anchor-label="requestVersion" id="-1028490924%2FFunctions%2F1818122103" data-filterable-set=":ViGRAM_SDK:dokkaHtml/release"></a>
+                <div class="table-row" data-filterable-current=":ViGRAM_SDK:dokkaHtml/release" data-filterable-set=":ViGRAM_SDK:dokkaHtml/release">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex">
+                        <div><a href="request-version.html"><span>request</span><wbr></wbr><span><span>Version</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1028490924%2FFunctions%2F1818122103"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title">
+                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":ViGRAM_SDK:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="request-version.html"><span class="token function">requestVersion</span></a><span class="token punctuation">(</span>callback<span class="token operator">: </span><a href="../../com.vigram.sdk.Modules/index.html#2030133080%2FClasslikes%2F1818122103">Callback1</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../com.vigram.sdk.Models/-device-message/-version/index.html">DeviceMessage.Version</a><span class="token operator">&gt;</span><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">Requests the version of the viDoc, including hardware and software version information.</p></div></div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="-1013369136%2FFunctions%2F1818122103" anchor-label="satelliteMessages" id="-1013369136%2FFunctions%2F1818122103" data-filterable-set=":ViGRAM_SDK:dokkaHtml/release"></a>
+                <div class="table-row" data-filterable-current=":ViGRAM_SDK:dokkaHtml/release" data-filterable-set=":ViGRAM_SDK:dokkaHtml/release">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex">
+                        <div><a href="satellite-messages.html"><span>satellite</span><wbr></wbr><span><span>Messages</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1013369136%2FFunctions%2F1818122103"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title">
+                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":ViGRAM_SDK:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="satellite-messages.html"><span class="token function">satelliteMessages</span></a><span class="token punctuation">(</span>callback<span class="token operator">: </span><a href="../../com.vigram.sdk.Modules/index.html#2030133080%2FClasslikes%2F1818122103">Callback1</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../com.vigram.sdk.Models.Satellite/-satellite-message/index.html">SatelliteMessage</a><span class="token operator">&gt;</span><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">Satellite messages received from the peripheral</p></div></div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="326681002%2FFunctions%2F1818122103" anchor-label="send" id="326681002%2FFunctions%2F1818122103" data-filterable-set=":ViGRAM_SDK:dokkaHtml/release"></a>
+                <div class="table-row" data-filterable-current=":ViGRAM_SDK:dokkaHtml/release" data-filterable-set=":ViGRAM_SDK:dokkaHtml/release">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex">
+                        <div><a href="send.html"><span><span>send</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="326681002%2FFunctions%2F1818122103"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title">
+                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":ViGRAM_SDK:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="send.html"><span class="token function">send</span></a><span class="token punctuation">(</span>bytes<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html">ByteArray</a><span class="token punctuation">, </span>chunkSize<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span>callback<span class="token operator">: </span><a href="../../com.vigram.sdk.Modules/index.html#2030133080%2FClasslikes%2F1818122103">Callback1</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../com.vigram.sdk.Models/-device-message/-measurement/index.html">DeviceMessage.Measurement</a><span class="token operator">&gt;</span><span class="token operator">?</span><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">Use this method to send out single messages to the viDoc. Messages to the peripheral are synchronized, so that even concurrent calls to this method will sequentially send out packets one message at a time.</p></div></div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="324101609%2FFunctions%2F1818122103" anchor-label="setChangingRateOfMessages" id="324101609%2FFunctions%2F1818122103" data-filterable-set=":ViGRAM_SDK:dokkaHtml/release"></a>
+                <div class="table-row" data-filterable-current=":ViGRAM_SDK:dokkaHtml/release" data-filterable-set=":ViGRAM_SDK:dokkaHtml/release">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex">
+                        <div><a href="set-changing-rate-of-messages.html"><span>set</span><wbr></wbr><span>Changing</span><wbr></wbr><span>Rate</span><wbr></wbr><span>Of</span><wbr></wbr><span><span>Messages</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="324101609%2FFunctions%2F1818122103"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title">
+                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":ViGRAM_SDK:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="set-changing-rate-of-messages.html"><span class="token function">setChangingRateOfMessages</span></a><span class="token punctuation">(</span>rate<span class="token operator">: </span><a href="../../com.vigram.sdk.SatelliteCommands/-rate-value/index.html">RateValue</a><span class="token punctuation">, </span>callback<span class="token operator">: </span><a href="../../com.vigram.sdk.Modules/index.html#2030133080%2FClasslikes%2F1818122103">Callback1</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../com.vigram.sdk.Models.UBXMessages/-a-c-k-message/index.html">ACKMessage</a><span class="token operator">&gt;</span><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">Changing rate of messages value</p></div></div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="2105147358%2FFunctions%2F1818122103" anchor-label="setDynamicState" id="2105147358%2FFunctions%2F1818122103" data-filterable-set=":ViGRAM_SDK:dokkaHtml/release"></a>
+                <div class="table-row" data-filterable-current=":ViGRAM_SDK:dokkaHtml/release" data-filterable-set=":ViGRAM_SDK:dokkaHtml/release">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex">
+                        <div><a href="set-dynamic-state.html"><span>set</span><wbr></wbr><span>Dynamic</span><wbr></wbr><span><span>State</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2105147358%2FFunctions%2F1818122103"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title">
+                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":ViGRAM_SDK:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="set-dynamic-state.html"><span class="token function">setDynamicState</span></a><span class="token punctuation">(</span>type<span class="token operator">: </span><a href="../../com.vigram.sdk.SatelliteCommands/-dynamic-state/index.html">DynamicState</a><span class="token punctuation">, </span>callbackAck<span class="token operator">: </span><a href="../../com.vigram.sdk.Modules/index.html#2030133080%2FClasslikes%2F1818122103">Callback1</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../com.vigram.sdk.Models.UBXMessages/-a-c-k-message/index.html">ACKMessage</a><span class="token operator">&gt;</span><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">Set dynamic state of viDoc</p></div></div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="-1771112780%2FFunctions%2F1818122103" anchor-label="setMinimumElevation" id="-1771112780%2FFunctions%2F1818122103" data-filterable-set=":ViGRAM_SDK:dokkaHtml/release"></a>
+                <div class="table-row" data-filterable-current=":ViGRAM_SDK:dokkaHtml/release" data-filterable-set=":ViGRAM_SDK:dokkaHtml/release">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex">
+                        <div><a href="set-minimum-elevation.html"><span>set</span><wbr></wbr><span>Minimum</span><wbr></wbr><span><span>Elevation</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1771112780%2FFunctions%2F1818122103"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title">
+                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":ViGRAM_SDK:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="set-minimum-elevation.html"><span class="token function">setMinimumElevation</span></a><span class="token punctuation">(</span>value<span class="token operator">: </span><a href="../../com.vigram.sdk.SatelliteCommands/-elevation/index.html">Elevation</a><span class="token punctuation">, </span>callback<span class="token operator">: </span><a href="../../com.vigram.sdk.Modules/index.html#2030133080%2FClasslikes%2F1818122103">Callback1</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../com.vigram.sdk.Models.UBXMessages/-a-c-k-message/index.html">ACKMessage</a><span class="token operator">&gt;</span><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">Set current elevation use in navigation</p></div></div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="-811634632%2FFunctions%2F1818122103" anchor-label="setUpdateSoftwareToNextStartup" id="-811634632%2FFunctions%2F1818122103" data-filterable-set=":ViGRAM_SDK:dokkaHtml/release"></a>
+                <div class="table-row" data-filterable-current=":ViGRAM_SDK:dokkaHtml/release" data-filterable-set=":ViGRAM_SDK:dokkaHtml/release">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex">
+                        <div><a href="set-update-software-to-next-startup.html"><span>set</span><wbr></wbr><span>Update</span><wbr></wbr><span>Software</span><wbr></wbr><span>To</span><wbr></wbr><span>Next</span><wbr></wbr><span><span>Startup</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-811634632%2FFunctions%2F1818122103"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title">
+                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":ViGRAM_SDK:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="set-update-software-to-next-startup.html"><span class="token function">setUpdateSoftwareToNextStartup</span></a><span class="token punctuation">(</span>software<span class="token operator">: </span><a href="../../com.vigram.sdk.Models/-device-message/-software/index.html">DeviceMessage.Software</a><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">Set starting update software process in next startup ViDoc</p></div></div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="871996643%2FFunctions%2F1818122103" anchor-label="softwareNotification" id="871996643%2FFunctions%2F1818122103" data-filterable-set=":ViGRAM_SDK:dokkaHtml/release"></a>
+                <div class="table-row" data-filterable-current=":ViGRAM_SDK:dokkaHtml/release" data-filterable-set=":ViGRAM_SDK:dokkaHtml/release">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex">
+                        <div><a href="software-notification.html"><span>software</span><wbr></wbr><span><span>Notification</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="871996643%2FFunctions%2F1818122103"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title">
+                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":ViGRAM_SDK:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="software-notification.html"><span class="token function">softwareNotification</span></a><span class="token punctuation">(</span>call<span class="token operator">: </span><span class="token punctuation">(</span><span class="token keyword"></span>current<span class="token operator">: </span><a href="../../com.vigram.sdk.Models/-device-message/-software/index.html">DeviceMessage.Software</a><span class="token punctuation">, </span><span class="token keyword"></span>actual<span class="token operator">: </span><a href="../../com.vigram.sdk.Models/-device-message/-software/index.html">DeviceMessage.Software</a><span class="token punctuation">, </span><span class="token keyword"></span>callAnswer<span class="token operator">: </span><span class="token punctuation">(</span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">Software notification.</p></div></div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="157495329%2FFunctions%2F1818122103" anchor-label="start" id="157495329%2FFunctions%2F1818122103" data-filterable-set=":ViGRAM_SDK:dokkaHtml/release"></a>
+                <div class="table-row" data-filterable-current=":ViGRAM_SDK:dokkaHtml/release" data-filterable-set=":ViGRAM_SDK:dokkaHtml/release">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex">
+                        <div><a href="start.html"><span><span>start</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="157495329%2FFunctions%2F1818122103"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title">
+                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":ViGRAM_SDK:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="start.html"><span class="token function">start</span></a><span class="token punctuation">(</span>context<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/content/Context.html">Context</a><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">Initializes the connection to the CBPeripheral. Make sure to call this method after connecting to the peripheral. Waiting for the response is essential in making sure that the peripheral can be used correctly.</p></div></div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="417778816%2FFunctions%2F1818122103" anchor-label="state" id="417778816%2FFunctions%2F1818122103" data-filterable-set=":ViGRAM_SDK:dokkaHtml/release"></a>
+                <div class="table-row" data-filterable-current=":ViGRAM_SDK:dokkaHtml/release" data-filterable-set=":ViGRAM_SDK:dokkaHtml/release">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex">
+                        <div><a href="state.html"><span><span>state</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="417778816%2FFunctions%2F1818122103"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title">
+                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":ViGRAM_SDK:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="state.html"><span class="token function">state</span></a><span class="token punctuation">(</span>callback<span class="token operator">: </span><a href="../../com.vigram.sdk.Modules/index.html#2030133080%2FClasslikes%2F1818122103">Callback1</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../com.vigram.sdk.Models/-peripheral-state/index.html">PeripheralState</a><span class="token operator">&gt;</span><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">The peripheral's connection state.</p></div></div></div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
-            </div>
-          </div>
-<a data-name="8570950%2FFunctions%2F1803641070" anchor-label="changeStatusGNSS" id="8570950%2FFunctions%2F1803641070" data-filterable-set=":ViGRAM_SDK:dokkaHtmlPartial/release"></a>
-          <div class="table-row" data-filterable-current=":ViGRAM_SDK:dokkaHtmlPartial/release" data-filterable-set=":ViGRAM_SDK:dokkaHtmlPartial/release">
-            <div class="main-subrow keyValue ">
-              <div class=""><span class="inline-flex">
-                  <div><a href="change-status-g-n-s-s.html"><span>change</span><wbr><span>Status</span><wbr><span><span>GNSS</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="8570950%2FFunctions%2F1803641070"></span>
-                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                  </span></span></div>
-              <div>
-                <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ViGRAM_SDK:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="change-status-g-n-s-s.html"><span class="token function">changeStatusGNSS</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">satellite<span class="token operator">: </span><a href="../../com.vigram.sdk.SatelliteCommands/-navigation-system-type/index.html">NavigationSystemType</a><span class="token punctuation">, </span></span><span class="parameter ">activate<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token punctuation">, </span></span><span class="parameter ">callback<span class="token operator">: </span><a href="../../com.vigram.sdk.Modules/index.html#2030133080%2FClasslikes%2F1803641070">Callback1</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../com.vigram.sdk.Models.UBXMessages/-a-c-k-message/index.html">ACKMessage</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Enable/Disable of GNSS Constellation to selected satellite.</p></div></div></div>
-                </div>
-              </div>
-            </div>
-          </div>
-<a data-name="1314068563%2FFunctions%2F1803641070" anchor-label="changeStatusNAVDOP" id="1314068563%2FFunctions%2F1803641070" data-filterable-set=":ViGRAM_SDK:dokkaHtmlPartial/release"></a>
-          <div class="table-row" data-filterable-current=":ViGRAM_SDK:dokkaHtmlPartial/release" data-filterable-set=":ViGRAM_SDK:dokkaHtmlPartial/release">
-            <div class="main-subrow keyValue ">
-              <div class=""><span class="inline-flex">
-                  <div><a href="change-status-n-a-v-d-o-p.html"><span>change</span><wbr><span>Status</span><wbr><span><span>NAVDOP</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1314068563%2FFunctions%2F1803641070"></span>
-                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                  </span></span></div>
-              <div>
-                <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ViGRAM_SDK:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="change-status-n-a-v-d-o-p.html"><span class="token function">changeStatusNAVDOP</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">activate<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token punctuation">, </span></span><span class="parameter ">permanently<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token punctuation">, </span></span><span class="parameter ">callback<span class="token operator">: </span><a href="../../com.vigram.sdk.Modules/index.html#2030133080%2FClasslikes%2F1803641070">Callback1</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../com.vigram.sdk.Models.UBXMessages/-a-c-k-message/index.html">ACKMessage</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Enable/Disable NAV-DOP messages</p></div></div></div>
-                </div>
-              </div>
-            </div>
-          </div>
-<a data-name="-1804716150%2FFunctions%2F1803641070" anchor-label="changeStatusNAVPVT" id="-1804716150%2FFunctions%2F1803641070" data-filterable-set=":ViGRAM_SDK:dokkaHtmlPartial/release"></a>
-          <div class="table-row" data-filterable-current=":ViGRAM_SDK:dokkaHtmlPartial/release" data-filterable-set=":ViGRAM_SDK:dokkaHtmlPartial/release">
-            <div class="main-subrow keyValue ">
-              <div class=""><span class="inline-flex">
-                  <div><a href="change-status-n-a-v-p-v-t.html"><span>change</span><wbr><span>Status</span><wbr><span><span>NAVPVT</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1804716150%2FFunctions%2F1803641070"></span>
-                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                  </span></span></div>
-              <div>
-                <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ViGRAM_SDK:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="change-status-n-a-v-p-v-t.html"><span class="token function">changeStatusNAVPVT</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">activate<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token punctuation">, </span></span><span class="parameter ">permanently<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token punctuation">, </span></span><span class="parameter ">callbackACK<span class="token operator">: </span><a href="../../com.vigram.sdk.Modules/index.html#2030133080%2FClasslikes%2F1803641070">Callback1</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../com.vigram.sdk.Models.UBXMessages/-a-c-k-message/index.html">ACKMessage</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Enable/Disable NAV-PVT messages</p></div></div></div>
-                </div>
-              </div>
-            </div>
-          </div>
-<a data-name="-1382110756%2FFunctions%2F1803641070" anchor-label="changeStatusRXM" id="-1382110756%2FFunctions%2F1803641070" data-filterable-set=":ViGRAM_SDK:dokkaHtmlPartial/release"></a>
-          <div class="table-row" data-filterable-current=":ViGRAM_SDK:dokkaHtmlPartial/release" data-filterable-set=":ViGRAM_SDK:dokkaHtmlPartial/release">
-            <div class="main-subrow keyValue ">
-              <div class=""><span class="inline-flex">
-                  <div><a href="change-status-r-x-m.html"><span>change</span><wbr><span>Status</span><wbr><span><span>RXM</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1382110756%2FFunctions%2F1803641070"></span>
-                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                  </span></span></div>
-              <div>
-                <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ViGRAM_SDK:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="change-status-r-x-m.html"><span class="token function">changeStatusRXM</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">activate<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token punctuation">, </span></span><span class="parameter ">permanently<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Enable/Disable RXM-RAWX and RXM-SFRBX messages</p></div></div></div>
-                </div>
-              </div>
-            </div>
-          </div>
-<a data-name="-275564034%2FFunctions%2F1803641070" anchor-label="configurationState" id="-275564034%2FFunctions%2F1803641070" data-filterable-set=":ViGRAM_SDK:dokkaHtmlPartial/release"></a>
-          <div class="table-row" data-filterable-current=":ViGRAM_SDK:dokkaHtmlPartial/release" data-filterable-set=":ViGRAM_SDK:dokkaHtmlPartial/release">
-            <div class="main-subrow keyValue ">
-              <div class=""><span class="inline-flex">
-                  <div><a href="configuration-state.html"><span>configuration</span><wbr><span><span>State</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-275564034%2FFunctions%2F1803641070"></span>
-                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                  </span></span></div>
-              <div>
-                <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ViGRAM_SDK:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="configuration-state.html"><span class="token function">configurationState</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">callback<span class="token operator">: </span><a href="../../com.vigram.sdk.Modules/index.html#2030133080%2FClasslikes%2F1803641070">Callback1</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../-state-peripheral-configuration/index.html">StatePeripheralConfiguration</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">This method allows you to find out the status of the peripheral configuration</p></div></div></div>
-                </div>
-              </div>
-            </div>
-          </div>
-<a data-name="1789882307%2FFunctions%2F1803641070" anchor-label="deviceMessages" id="1789882307%2FFunctions%2F1803641070" data-filterable-set=":ViGRAM_SDK:dokkaHtmlPartial/release"></a>
-          <div class="table-row" data-filterable-current=":ViGRAM_SDK:dokkaHtmlPartial/release" data-filterable-set=":ViGRAM_SDK:dokkaHtmlPartial/release">
-            <div class="main-subrow keyValue ">
-              <div class=""><span class="inline-flex">
-                  <div><a href="device-messages.html"><span>device</span><wbr><span><span>Messages</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1789882307%2FFunctions%2F1803641070"></span>
-                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                  </span></span></div>
-              <div>
-                <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ViGRAM_SDK:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="device-messages.html"><span class="token function">deviceMessages</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">callback<span class="token operator">: </span><a href="../../com.vigram.sdk.Modules/index.html#2030133080%2FClasslikes%2F1803641070">Callback1</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../com.vigram.sdk.Models/-device-message/index.html">DeviceMessage</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Device messages received from the peripheral.</p></div></div></div>
-                </div>
-              </div>
-            </div>
-          </div>
-<a data-name="-113952586%2FFunctions%2F1803641070" anchor-label="disconnect" id="-113952586%2FFunctions%2F1803641070" data-filterable-set=":ViGRAM_SDK:dokkaHtmlPartial/release"></a>
-          <div class="table-row" data-filterable-current=":ViGRAM_SDK:dokkaHtmlPartial/release" data-filterable-set=":ViGRAM_SDK:dokkaHtmlPartial/release">
-            <div class="main-subrow keyValue ">
-              <div class=""><span class="inline-flex">
-                  <div><a href="disconnect.html"><span><span>disconnect</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-113952586%2FFunctions%2F1803641070"></span>
-                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                  </span></span></div>
-              <div>
-                <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ViGRAM_SDK:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="disconnect.html"><span class="token function">disconnect</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Disconnecting from the peripheral device</p></div></div></div>
-                </div>
-              </div>
-            </div>
-          </div>
-<a data-name="1101620288%2FFunctions%2F1803641070" anchor-label="getCurrentDynamicState" id="1101620288%2FFunctions%2F1803641070" data-filterable-set=":ViGRAM_SDK:dokkaHtmlPartial/release"></a>
-          <div class="table-row" data-filterable-current=":ViGRAM_SDK:dokkaHtmlPartial/release" data-filterable-set=":ViGRAM_SDK:dokkaHtmlPartial/release">
-            <div class="main-subrow keyValue ">
-              <div class=""><span class="inline-flex">
-                  <div><a href="get-current-dynamic-state.html"><span>get</span><wbr><span>Current</span><wbr><span>Dynamic</span><wbr><span><span>State</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1101620288%2FFunctions%2F1803641070"></span>
-                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                  </span></span></div>
-              <div>
-                <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ViGRAM_SDK:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-current-dynamic-state.html"><span class="token function">getCurrentDynamicState</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">callback<span class="token operator">: </span><a href="../../com.vigram.sdk.Modules/index.html#2030133080%2FClasslikes%2F1803641070">Callback1</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../com.vigram.sdk.SatelliteCommands/-dynamic-state-type/index.html">DynamicStateType</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Get the current dynamic state</p></div></div></div>
-                </div>
-              </div>
-            </div>
-          </div>
-<a data-name="533624286%2FFunctions%2F1803641070" anchor-label="getCurrentMinimumElevation" id="533624286%2FFunctions%2F1803641070" data-filterable-set=":ViGRAM_SDK:dokkaHtmlPartial/release"></a>
-          <div class="table-row" data-filterable-current=":ViGRAM_SDK:dokkaHtmlPartial/release" data-filterable-set=":ViGRAM_SDK:dokkaHtmlPartial/release">
-            <div class="main-subrow keyValue ">
-              <div class=""><span class="inline-flex">
-                  <div><a href="get-current-minimum-elevation.html"><span>get</span><wbr><span>Current</span><wbr><span>Minimum</span><wbr><span><span>Elevation</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="533624286%2FFunctions%2F1803641070"></span>
-                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                  </span></span></div>
-              <div>
-                <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ViGRAM_SDK:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-current-minimum-elevation.html"><span class="token function">getCurrentMinimumElevation</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">callback<span class="token operator">: </span><a href="../../com.vigram.sdk.Modules/index.html#2030133080%2FClasslikes%2F1803641070">Callback1</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../com.vigram.sdk.SatelliteCommands/-elevation/index.html">Elevation</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Get minimum Elevation for Satellites currently used in navigation</p></div></div></div>
-                </div>
-              </div>
-            </div>
-          </div>
-<a data-name="1125674801%2FFunctions%2F1803641070" anchor-label="getCurrentRateOfMessages" id="1125674801%2FFunctions%2F1803641070" data-filterable-set=":ViGRAM_SDK:dokkaHtmlPartial/release"></a>
-          <div class="table-row" data-filterable-current=":ViGRAM_SDK:dokkaHtmlPartial/release" data-filterable-set=":ViGRAM_SDK:dokkaHtmlPartial/release">
-            <div class="main-subrow keyValue ">
-              <div class=""><span class="inline-flex">
-                  <div><a href="get-current-rate-of-messages.html"><span>get</span><wbr><span>Current</span><wbr><span>Rate</span><wbr><span>Of</span><wbr><span><span>Messages</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1125674801%2FFunctions%2F1803641070"></span>
-                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                  </span></span></div>
-              <div>
-                <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ViGRAM_SDK:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-current-rate-of-messages.html"><span class="token function">getCurrentRateOfMessages</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">callback<span class="token operator">: </span><a href="../../com.vigram.sdk.Modules/index.html#2030133080%2FClasslikes%2F1803641070">Callback1</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../com.vigram.sdk.Models.UBXMessages/-a-c-k-message/index.html">ACKMessage</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span></div></div></div>
-                </div>
-              </div>
-            </div>
-          </div>
-<a data-name="592164050%2FFunctions%2F1803641070" anchor-label="getCurrentStatusGNSS" id="592164050%2FFunctions%2F1803641070" data-filterable-set=":ViGRAM_SDK:dokkaHtmlPartial/release"></a>
-          <div class="table-row" data-filterable-current=":ViGRAM_SDK:dokkaHtmlPartial/release" data-filterable-set=":ViGRAM_SDK:dokkaHtmlPartial/release">
-            <div class="main-subrow keyValue ">
-              <div class=""><span class="inline-flex">
-                  <div><a href="get-current-status-g-n-s-s.html"><span>get</span><wbr><span>Current</span><wbr><span>Status</span><wbr><span><span>GNSS</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="592164050%2FFunctions%2F1803641070"></span>
-                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                  </span></span></div>
-              <div>
-                <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ViGRAM_SDK:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-current-status-g-n-s-s.html"><span class="token function">getCurrentStatusGNSS</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">satellite<span class="token operator">: </span><a href="../../com.vigram.sdk.SatelliteCommands/-navigation-system-type/index.html">NavigationSystemType</a><span class="token punctuation">, </span></span><span class="parameter ">callback<span class="token operator">: </span><a href="../../com.vigram.sdk.Modules/index.html#2030133080%2FClasslikes%2F1803641070">Callback1</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../com.vigram.sdk.Models.Satellite/-status-satellite/index.html">StatusSatellite</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Get current status of GNSS Constellation to selected satellite.</p></div></div></div>
-                </div>
-              </div>
-            </div>
-          </div>
-<a data-name="342337032%2FFunctions%2F1803641070" anchor-label="nmea" id="342337032%2FFunctions%2F1803641070" data-filterable-set=":ViGRAM_SDK:dokkaHtmlPartial/release"></a>
-          <div class="table-row" data-filterable-current=":ViGRAM_SDK:dokkaHtmlPartial/release" data-filterable-set=":ViGRAM_SDK:dokkaHtmlPartial/release">
-            <div class="main-subrow keyValue ">
-              <div class=""><span class="inline-flex">
-                  <div><a href="nmea.html"><span><span>nmea</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="342337032%2FFunctions%2F1803641070"></span>
-                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                  </span></span></div>
-              <div>
-                <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ViGRAM_SDK:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="nmea.html"><span class="token function">nmea</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">callback<span class="token operator">: </span><a href="../../com.vigram.sdk.Modules/index.html#2030133080%2FClasslikes%2F1803641070">Callback1</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../com.vigram.sdk.Modules/-n-m-e-a-message/index.html">NMEAMessage</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">NMEA messages received from the peripheral. To provide an optimal use of the VigramSDK, the viDoc should be configured to send out NMEA-0183-GGA and NMEA-0183-GST messages.</p></div></div></div>
-                </div>
-              </div>
-            </div>
-          </div>
-<a data-name="232723312%2FFunctions%2F1803641070" anchor-label="poolNAVPVT" id="232723312%2FFunctions%2F1803641070" data-filterable-set=":ViGRAM_SDK:dokkaHtmlPartial/release"></a>
-          <div class="table-row" data-filterable-current=":ViGRAM_SDK:dokkaHtmlPartial/release" data-filterable-set=":ViGRAM_SDK:dokkaHtmlPartial/release">
-            <div class="main-subrow keyValue ">
-              <div class=""><span class="inline-flex">
-                  <div><a href="pool-n-a-v-p-v-t.html"><span>pool</span><wbr><span><span>NAVPVT</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="232723312%2FFunctions%2F1803641070"></span>
-                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                  </span></span></div>
-              <div>
-                <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ViGRAM_SDK:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="pool-n-a-v-p-v-t.html"><span class="token function">poolNAVPVT</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">callback<span class="token operator">: </span><a href="../../com.vigram.sdk.Modules/index.html#2030133080%2FClasslikes%2F1803641070">Callback1</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../com.vigram.sdk.Models.UBXMessages/-a-c-k-message/index.html">ACKMessage</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Poll NAV-PVT Message</p></div></div></div>
-                </div>
-              </div>
-            </div>
-          </div>
-<a data-name="121640475%2FFunctions%2F1803641070" anchor-label="progressUpdateSoftware" id="121640475%2FFunctions%2F1803641070" data-filterable-set=":ViGRAM_SDK:dokkaHtmlPartial/release"></a>
-          <div class="table-row" data-filterable-current=":ViGRAM_SDK:dokkaHtmlPartial/release" data-filterable-set=":ViGRAM_SDK:dokkaHtmlPartial/release">
-            <div class="main-subrow keyValue ">
-              <div class=""><span class="inline-flex">
-                  <div><a href="progress-update-software.html"><span>progress</span><wbr><span>Update</span><wbr><span><span>Software</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="121640475%2FFunctions%2F1803641070"></span>
-                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                  </span></span></div>
-              <div>
-                <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ViGRAM_SDK:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="progress-update-software.html"><span class="token function">progressUpdateSoftware</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">callbackState<span class="token operator">: </span><a href="../../com.vigram.sdk.Modules/index.html#2061152887%2FClasslikes%2F1803641070">Callback2</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../com.vigram.sdk.Models/-state-update-software/index.html">StateUpdateSoftware</a><span class="token punctuation">, </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">&gt;</span><span class="token punctuation">, </span></span><span class="parameter ">callbackProgress<span class="token operator">: </span><a href="../../com.vigram.sdk.Modules/index.html#2030133080%2FClasslikes%2F1803641070">Callback1</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html">Double</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Progress update software.</p></div></div></div>
-                </div>
-              </div>
-            </div>
-          </div>
-<a data-name="2130128894%2FFunctions%2F1803641070" anchor-label="requestBattery" id="2130128894%2FFunctions%2F1803641070" data-filterable-set=":ViGRAM_SDK:dokkaHtmlPartial/release"></a>
-          <div class="table-row" data-filterable-current=":ViGRAM_SDK:dokkaHtmlPartial/release" data-filterable-set=":ViGRAM_SDK:dokkaHtmlPartial/release">
-            <div class="main-subrow keyValue ">
-              <div class=""><span class="inline-flex">
-                  <div><a href="request-battery.html"><span>request</span><wbr><span><span>Battery</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2130128894%2FFunctions%2F1803641070"></span>
-                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                  </span></span></div>
-              <div>
-                <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ViGRAM_SDK:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="request-battery.html"><span class="token function">requestBattery</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">callback<span class="token operator">: </span><a href="../../com.vigram.sdk.Modules/index.html#2030133080%2FClasslikes%2F1803641070">Callback1</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../com.vigram.sdk.Models/-device-message/-battery/index.html">DeviceMessage.Battery</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Requests the battery level of the viDoc.</p></div></div></div>
-                </div>
-              </div>
-            </div>
-          </div>
-<a data-name="-1028490924%2FFunctions%2F1803641070" anchor-label="requestVersion" id="-1028490924%2FFunctions%2F1803641070" data-filterable-set=":ViGRAM_SDK:dokkaHtmlPartial/release"></a>
-          <div class="table-row" data-filterable-current=":ViGRAM_SDK:dokkaHtmlPartial/release" data-filterable-set=":ViGRAM_SDK:dokkaHtmlPartial/release">
-            <div class="main-subrow keyValue ">
-              <div class=""><span class="inline-flex">
-                  <div><a href="request-version.html"><span>request</span><wbr><span><span>Version</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1028490924%2FFunctions%2F1803641070"></span>
-                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                  </span></span></div>
-              <div>
-                <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ViGRAM_SDK:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="request-version.html"><span class="token function">requestVersion</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">callback<span class="token operator">: </span><a href="../../com.vigram.sdk.Modules/index.html#2030133080%2FClasslikes%2F1803641070">Callback1</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../com.vigram.sdk.Models/-device-message/-version/index.html">DeviceMessage.Version</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Requests the version of the viDoc, including hardware and software version information.</p></div></div></div>
-                </div>
-              </div>
-            </div>
-          </div>
-<a data-name="-1013369136%2FFunctions%2F1803641070" anchor-label="satelliteMessages" id="-1013369136%2FFunctions%2F1803641070" data-filterable-set=":ViGRAM_SDK:dokkaHtmlPartial/release"></a>
-          <div class="table-row" data-filterable-current=":ViGRAM_SDK:dokkaHtmlPartial/release" data-filterable-set=":ViGRAM_SDK:dokkaHtmlPartial/release">
-            <div class="main-subrow keyValue ">
-              <div class=""><span class="inline-flex">
-                  <div><a href="satellite-messages.html"><span>satellite</span><wbr><span><span>Messages</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1013369136%2FFunctions%2F1803641070"></span>
-                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                  </span></span></div>
-              <div>
-                <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ViGRAM_SDK:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="satellite-messages.html"><span class="token function">satelliteMessages</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">callback<span class="token operator">: </span><a href="../../com.vigram.sdk.Modules/index.html#2030133080%2FClasslikes%2F1803641070">Callback1</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../com.vigram.sdk.Models.Satellite/-satellite-message/index.html">SatelliteMessage</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Satellite messages received from the peripheral</p></div></div></div>
-                </div>
-              </div>
-            </div>
-          </div>
-<a data-name="326681002%2FFunctions%2F1803641070" anchor-label="send" id="326681002%2FFunctions%2F1803641070" data-filterable-set=":ViGRAM_SDK:dokkaHtmlPartial/release"></a>
-          <div class="table-row" data-filterable-current=":ViGRAM_SDK:dokkaHtmlPartial/release" data-filterable-set=":ViGRAM_SDK:dokkaHtmlPartial/release">
-            <div class="main-subrow keyValue ">
-              <div class=""><span class="inline-flex">
-                  <div><a href="send.html"><span><span>send</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="326681002%2FFunctions%2F1803641070"></span>
-                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                  </span></span></div>
-              <div>
-                <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ViGRAM_SDK:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="send.html"><span class="token function">send</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">bytes<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html">ByteArray</a><span class="token punctuation">, </span></span><span class="parameter ">chunkSize<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">callback<span class="token operator">: </span><a href="../../com.vigram.sdk.Modules/index.html#2030133080%2FClasslikes%2F1803641070">Callback1</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../com.vigram.sdk.Models/-device-message/-measurement/index.html">DeviceMessage.Measurement</a><span class="token operator">&gt;</span><span class="token operator">?</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Use this method to send out single messages to the viDoc. Messages to the peripheral are synchronized, so that even concurrent calls to this method will sequentially send out packets one message at a time.</p></div></div></div>
-                </div>
-              </div>
-            </div>
-          </div>
-<a data-name="324101609%2FFunctions%2F1803641070" anchor-label="setChangingRateOfMessages" id="324101609%2FFunctions%2F1803641070" data-filterable-set=":ViGRAM_SDK:dokkaHtmlPartial/release"></a>
-          <div class="table-row" data-filterable-current=":ViGRAM_SDK:dokkaHtmlPartial/release" data-filterable-set=":ViGRAM_SDK:dokkaHtmlPartial/release">
-            <div class="main-subrow keyValue ">
-              <div class=""><span class="inline-flex">
-                  <div><a href="set-changing-rate-of-messages.html"><span>set</span><wbr><span>Changing</span><wbr><span>Rate</span><wbr><span>Of</span><wbr><span><span>Messages</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="324101609%2FFunctions%2F1803641070"></span>
-                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                  </span></span></div>
-              <div>
-                <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ViGRAM_SDK:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="set-changing-rate-of-messages.html"><span class="token function">setChangingRateOfMessages</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">rate<span class="token operator">: </span><a href="../../com.vigram.sdk.SatelliteCommands/-rate-value/index.html">RateValue</a><span class="token punctuation">, </span></span><span class="parameter ">callback<span class="token operator">: </span><a href="../../com.vigram.sdk.Modules/index.html#2030133080%2FClasslikes%2F1803641070">Callback1</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../com.vigram.sdk.Models.UBXMessages/-a-c-k-message/index.html">ACKMessage</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Changing rate of messages value</p></div></div></div>
-                </div>
-              </div>
-            </div>
-          </div>
-<a data-name="1086831436%2FFunctions%2F1803641070" anchor-label="setDynamicState" id="1086831436%2FFunctions%2F1803641070" data-filterable-set=":ViGRAM_SDK:dokkaHtmlPartial/release"></a>
-          <div class="table-row" data-filterable-current=":ViGRAM_SDK:dokkaHtmlPartial/release" data-filterable-set=":ViGRAM_SDK:dokkaHtmlPartial/release">
-            <div class="main-subrow keyValue ">
-              <div class=""><span class="inline-flex">
-                  <div><a href="set-dynamic-state.html"><span>set</span><wbr><span>Dynamic</span><wbr><span><span>State</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1086831436%2FFunctions%2F1803641070"></span>
-                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                  </span></span></div>
-              <div>
-                <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ViGRAM_SDK:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="set-dynamic-state.html"><span class="token function">setDynamicState</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">type<span class="token operator">: </span><a href="../../com.vigram.sdk.SatelliteCommands/-dynamic-state-type/index.html">DynamicStateType</a><span class="token punctuation">, </span></span><span class="parameter ">permanently<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token punctuation">, </span></span><span class="parameter ">callbackAck<span class="token operator">: </span><a href="../../com.vigram.sdk.Modules/index.html#2030133080%2FClasslikes%2F1803641070">Callback1</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../com.vigram.sdk.Models.UBXMessages/-a-c-k-message/index.html">ACKMessage</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Set dynamic state of viDoc</p></div></div></div>
-                </div>
-              </div>
-            </div>
-          </div>
-<a data-name="-1771112780%2FFunctions%2F1803641070" anchor-label="setMinimumElevation" id="-1771112780%2FFunctions%2F1803641070" data-filterable-set=":ViGRAM_SDK:dokkaHtmlPartial/release"></a>
-          <div class="table-row" data-filterable-current=":ViGRAM_SDK:dokkaHtmlPartial/release" data-filterable-set=":ViGRAM_SDK:dokkaHtmlPartial/release">
-            <div class="main-subrow keyValue ">
-              <div class=""><span class="inline-flex">
-                  <div><a href="set-minimum-elevation.html"><span>set</span><wbr><span>Minimum</span><wbr><span><span>Elevation</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1771112780%2FFunctions%2F1803641070"></span>
-                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                  </span></span></div>
-              <div>
-                <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ViGRAM_SDK:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="set-minimum-elevation.html"><span class="token function">setMinimumElevation</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">value<span class="token operator">: </span><a href="../../com.vigram.sdk.SatelliteCommands/-elevation/index.html">Elevation</a><span class="token punctuation">, </span></span><span class="parameter ">callback<span class="token operator">: </span><a href="../../com.vigram.sdk.Modules/index.html#2030133080%2FClasslikes%2F1803641070">Callback1</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../com.vigram.sdk.Models.UBXMessages/-a-c-k-message/index.html">ACKMessage</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Set current elevation use in navigation</p></div></div></div>
-                </div>
-              </div>
-            </div>
-          </div>
-<a data-name="-811634632%2FFunctions%2F1803641070" anchor-label="setUpdateSoftwareToNextStartup" id="-811634632%2FFunctions%2F1803641070" data-filterable-set=":ViGRAM_SDK:dokkaHtmlPartial/release"></a>
-          <div class="table-row" data-filterable-current=":ViGRAM_SDK:dokkaHtmlPartial/release" data-filterable-set=":ViGRAM_SDK:dokkaHtmlPartial/release">
-            <div class="main-subrow keyValue ">
-              <div class=""><span class="inline-flex">
-                  <div><a href="set-update-software-to-next-startup.html"><span>set</span><wbr><span>Update</span><wbr><span>Software</span><wbr><span>To</span><wbr><span>Next</span><wbr><span><span>Startup</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-811634632%2FFunctions%2F1803641070"></span>
-                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                  </span></span></div>
-              <div>
-                <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ViGRAM_SDK:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="set-update-software-to-next-startup.html"><span class="token function">setUpdateSoftwareToNextStartup</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">software<span class="token operator">: </span><a href="../../com.vigram.sdk.Models/-device-message/-software/index.html">DeviceMessage.Software</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Set starting update software process in next startup ViDoc</p></div></div></div>
-                </div>
-              </div>
-            </div>
-          </div>
-<a data-name="871996643%2FFunctions%2F1803641070" anchor-label="softwareNotification" id="871996643%2FFunctions%2F1803641070" data-filterable-set=":ViGRAM_SDK:dokkaHtmlPartial/release"></a>
-          <div class="table-row" data-filterable-current=":ViGRAM_SDK:dokkaHtmlPartial/release" data-filterable-set=":ViGRAM_SDK:dokkaHtmlPartial/release">
-            <div class="main-subrow keyValue ">
-              <div class=""><span class="inline-flex">
-                  <div><a href="software-notification.html"><span>software</span><wbr><span><span>Notification</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="871996643%2FFunctions%2F1803641070"></span>
-                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                  </span></span></div>
-              <div>
-                <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ViGRAM_SDK:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="software-notification.html"><span class="token function">softwareNotification</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">call<span class="token operator">: </span><span class="token punctuation">(</span><span class="token keyword"></span>current<span class="token operator">: </span><a href="../../com.vigram.sdk.Models/-device-message/-software/index.html">DeviceMessage.Software</a><span class="token punctuation">, </span><span class="token keyword"></span>actual<span class="token operator">: </span><a href="../../com.vigram.sdk.Models/-device-message/-software/index.html">DeviceMessage.Software</a><span class="token punctuation">, </span><span class="token keyword"></span>callAnswer<span class="token operator">: </span><span class="token punctuation">(</span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Software notification.</p></div></div></div>
-                </div>
-              </div>
-            </div>
-          </div>
-<a data-name="157495329%2FFunctions%2F1803641070" anchor-label="start" id="157495329%2FFunctions%2F1803641070" data-filterable-set=":ViGRAM_SDK:dokkaHtmlPartial/release"></a>
-          <div class="table-row" data-filterable-current=":ViGRAM_SDK:dokkaHtmlPartial/release" data-filterable-set=":ViGRAM_SDK:dokkaHtmlPartial/release">
-            <div class="main-subrow keyValue ">
-              <div class=""><span class="inline-flex">
-                  <div><a href="start.html"><span><span>start</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="157495329%2FFunctions%2F1803641070"></span>
-                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                  </span></span></div>
-              <div>
-                <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ViGRAM_SDK:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="start.html"><span class="token function">start</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">context<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/content/Context.html">Context</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Initializes the connection to the CBPeripheral. Make sure to call this method after connecting to the peripheral. Waiting for the response is essential in making sure that the peripheral can be used correctly.</p></div></div></div>
-                </div>
-              </div>
-            </div>
-          </div>
-<a data-name="2127241507%2FFunctions%2F1803641070" anchor-label="startRecordPPKMeasurements" id="2127241507%2FFunctions%2F1803641070" data-filterable-set=":ViGRAM_SDK:dokkaHtmlPartial/release"></a>
-          <div class="table-row" data-filterable-current=":ViGRAM_SDK:dokkaHtmlPartial/release" data-filterable-set=":ViGRAM_SDK:dokkaHtmlPartial/release">
-            <div class="main-subrow keyValue ">
-              <div class=""><span class="inline-flex">
-                  <div><a href="start-record-p-p-k-measurements.html"><span>start</span><wbr><span>Record</span><wbr><span><span>PPKMeasurements</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2127241507%2FFunctions%2F1803641070"></span>
-                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                  </span></span></div>
-              <div>
-                <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ViGRAM_SDK:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="start-record-p-p-k-measurements.html"><span class="token function">startRecordPPKMeasurements</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">uri<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/net/Uri.html">Uri</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Start PPK process</p></div></div></div>
-                </div>
-              </div>
-            </div>
-          </div>
-<a data-name="417778816%2FFunctions%2F1803641070" anchor-label="state" id="417778816%2FFunctions%2F1803641070" data-filterable-set=":ViGRAM_SDK:dokkaHtmlPartial/release"></a>
-          <div class="table-row" data-filterable-current=":ViGRAM_SDK:dokkaHtmlPartial/release" data-filterable-set=":ViGRAM_SDK:dokkaHtmlPartial/release">
-            <div class="main-subrow keyValue ">
-              <div class=""><span class="inline-flex">
-                  <div><a href="state.html"><span><span>state</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="417778816%2FFunctions%2F1803641070"></span>
-                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                  </span></span></div>
-              <div>
-                <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ViGRAM_SDK:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="state.html"><span class="token function">state</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">callback<span class="token operator">: </span><a href="../../com.vigram.sdk.Modules/index.html#2030133080%2FClasslikes%2F1803641070">Callback1</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../com.vigram.sdk.Models/-peripheral-state/index.html">PeripheralState</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">The peripheral's connection state.</p></div></div></div>
-                </div>
-              </div>
-            </div>
-          </div>
-<a data-name="1104491801%2FFunctions%2F1803641070" anchor-label="stopRecordPPKMeasurements" id="1104491801%2FFunctions%2F1803641070" data-filterable-set=":ViGRAM_SDK:dokkaHtmlPartial/release"></a>
-          <div class="table-row" data-filterable-current=":ViGRAM_SDK:dokkaHtmlPartial/release" data-filterable-set=":ViGRAM_SDK:dokkaHtmlPartial/release">
-            <div class="main-subrow keyValue ">
-              <div class=""><span class="inline-flex">
-                  <div><a href="stop-record-p-p-k-measurements.html"><span>stop</span><wbr><span>Record</span><wbr><span><span>PPKMeasurements</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1104491801%2FFunctions%2F1803641070"></span>
-                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                  </span></span></div>
-              <div>
-                <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ViGRAM_SDK:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="stop-record-p-p-k-measurements.html"><span class="token function">stopRecordPPKMeasurements</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Stop PPK process</p></div></div></div>
+              <h2 class="">Inheritors</h2>
+              <div class="table" data-togglable="Inheritors"><a data-name="-250626212%2FInheritors%2F1818122103" anchor-label="DefaultPeripheral" id="-250626212%2FInheritors%2F1818122103" data-filterable-set=":ViGRAM_SDK:dokkaHtml/release"></a>
+                <div class="table-row" data-filterable-current=":ViGRAM_SDK:dokkaHtml/release" data-filterable-set=":ViGRAM_SDK:dokkaHtml/release">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex">
+                        <div><a href="../-default-peripheral/index.html">DefaultPeripheral</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-250626212%2FInheritors%2F1818122103"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div></div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
+        <div class="footer"><span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2023 Copyright</span><span class="pull-right"><span>Generated by </span><a href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span></div>
       </div>
     </div>
-  </div>
-</div>
-      <div class="footer">
-        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2023 Copyright</span><span class="pull-right"><span>Generated by </span><a href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
-      </div>
-    </div>
-</div>
-</body>
+  </body>
 </html>
 

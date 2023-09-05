@@ -1,409 +1,291 @@
-<!doctype html>
 <html>
-<head>
+  <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
     <title>ViGRAM_SDK</title>
-<link href="../images/logo-icon.svg" rel="icon" type="image/svg"><script>var pathToRoot = "../";</script>    <script>const storage = localStorage.getItem("dokka-dark-mode")
-    if (storage == null) {
-        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
-        if (osDarkSchemePreferred === true) {
-            document.getElementsByTagName("html")[0].classList.add("theme-dark")
-        }
-    } else {
-        const savedDarkMode = JSON.parse(storage)
-        if(savedDarkMode === true) {
-            document.getElementsByTagName("html")[0].classList.add("theme-dark")
-        }
-    }
-    </script>
-<script type="text/javascript" src="../scripts/sourceset_dependencies.js" async></script>
-<link href="../styles/style.css" rel="Stylesheet">
-<link href="../styles/jetbrains-mono.css" rel="Stylesheet">
-<link href="../styles/main.css" rel="Stylesheet">
-<link href="../styles/prism.css" rel="Stylesheet">
-<link href="../styles/logo-styles.css" rel="Stylesheet">
-<script type="text/javascript" src="../scripts/clipboard.js" async></script>
-<script type="text/javascript" src="../scripts/navigation-loader.js" async></script>
-<script type="text/javascript" src="../scripts/platform-content-handler.js" async></script>
-<script type="text/javascript" src="../scripts/main.js" defer></script>
-<script type="text/javascript" src="../scripts/prism.js" async></script>
-<script type="text/javascript" src="../scripts/symbol-parameters-wrapper_deferred.js" defer></script></head>
-<body>
-<div class="navigation-wrapper" id="navigation-wrapper">
-    <div id="leftToggler"><span class="icon-toggler"></span></div>
-    <div class="library-name">
-<a href="../index.html">
-<span>VigramSDK</span>            </a>    </div>
-    <div>
-    </div>
-    <div class="pull-right d-flex">
-        <div class="filter-section" id="filter-section">
-                <button class="platform-tag platform-selector jvm-like" data-active="" data-filter=":ViGRAM_SDK:dokkaHtmlPartial/release">androidJvm</button>
-        </div>
-        <button id="theme-toggle-button"><span id="theme-toggle"></span></button>
+<link href="images/logo-icon.svg" rel="icon" type="image/svg"><script>var pathToRoot = "";</script>    <script>const storage = localStorage.getItem("dokka-dark-mode")
+const savedDarkMode = storage ? JSON.parse(storage) : false
+if(savedDarkMode === true){
+    document.getElementsByTagName("html")[0].classList.add("theme-dark")
+}</script>
+<script type="text/javascript" src="scripts/sourceset_dependencies.js" async="async"></script><link href="styles/style.css" rel="Stylesheet"><link href="styles/jetbrains-mono.css" rel="Stylesheet"><link href="styles/main.css" rel="Stylesheet"><link href="styles/prism.css" rel="Stylesheet"><link href="styles/logo-styles.css" rel="Stylesheet"><script type="text/javascript" src="scripts/clipboard.js" async="async"></script><script type="text/javascript" src="scripts/navigation-loader.js" async="async"></script><script type="text/javascript" src="scripts/platform-content-handler.js" async="async"></script><script type="text/javascript" src="scripts/main.js" defer="defer"></script><script type="text/javascript" src="scripts/prism.js" async="async"></script>  </head>
+  <body>
+    <div class="navigation-wrapper" id="navigation-wrapper">
+      <div id="leftToggler"><span class="icon-toggler"></span></div>
+      <div class="library-name"><a href="index.html">ViGRAM_SDK</a></div>
+      <div>1.2.0</div>
+      <div class="pull-right d-flex"><button id="theme-toggle-button"><span id="theme-toggle"></span></button>
         <div id="searchBar"></div>
+      </div>
     </div>
-</div>
-<div id="container">
-    <div id="leftColumn">
+    <div id="container">
+      <div id="leftColumn">
         <div id="sideMenu"></div>
-    </div>
-    <div id="main">
-<div class="main-content" id="content" pageids="ViGRAM_SDK::////PointingToDeclaration//1803641070">
-  <div class="breadcrumbs"></div>
-  <div class="cover ">
-    <h1 class="cover"><span>Vi</span><wbr><span><span>GRAM_SDK</span></span></h1>
-  </div>
-  <h2 class="">Packages</h2>
-  <div class="table"><a data-name="-186532475%2FPackages%2F1803641070" anchor-label="com.vigram.sdk" id="-186532475%2FPackages%2F1803641070" data-filterable-set=":ViGRAM_SDK:dokkaHtmlPartial/release"></a>
-    <div class="table-row" data-filterable-current=":ViGRAM_SDK:dokkaHtmlPartial/release" data-filterable-set=":ViGRAM_SDK:dokkaHtmlPartial/release">
-      <div>
-        <div class="main-subrow ">
-          <div class=""><span class="inline-flex">
-              <div><a href="com.vigram.sdk/index.html">com.vigram.sdk</a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-186532475%2FPackages%2F1803641070"></span>
-                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-              </span></span></div>
-          <div class="pull-right">
-            <div class="platform-tags no-gutters">
-              <div class="platform-tag jvm-like">androidJvm</div>
+      </div>
+      <div id="main">
+        <div class="main-content" id="content" pageIds="ViGRAM_SDK::////PointingToDeclaration//1818122103">
+          <div class="breadcrumbs"></div>
+          <div class="cover ">
+            <h1 class="cover"><span>Vi</span><wbr></wbr><span><span>GRAM_SDK</span></span></h1>
+          </div>
+          <h2 class="">Packages</h2>
+          <div class="table"><a data-name="-186532475%2FPackages%2F1818122103" anchor-label="com.vigram.sdk" id="-186532475%2FPackages%2F1818122103" data-filterable-set=":ViGRAM_SDK:dokkaHtml/release"></a>
+            <div class="table-row" data-filterable-current=":ViGRAM_SDK:dokkaHtml/release" data-filterable-set=":ViGRAM_SDK:dokkaHtml/release">
+              <div>
+                <div class="main-subrow ">
+                  <div class=""><span class="inline-flex">
+                      <div><a href="com.vigram.sdk/index.html">com.vigram.sdk</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-186532475%2FPackages%2F1818122103"></span>
+                        <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                      </span></span></div>
+                  <div class="pull-right"></div>
+                </div>
+                <div></div>
+              </div>
+            </div>
+<a data-name="309204133%2FPackages%2F1818122103" anchor-label="com.vigram.sdk.Authentication" id="309204133%2FPackages%2F1818122103" data-filterable-set=":ViGRAM_SDK:dokkaHtml/release"></a>
+            <div class="table-row" data-filterable-current=":ViGRAM_SDK:dokkaHtml/release" data-filterable-set=":ViGRAM_SDK:dokkaHtml/release">
+              <div>
+                <div class="main-subrow ">
+                  <div class=""><span class="inline-flex">
+                      <div><a href="com.vigram.sdk.Authentication/index.html">com.vigram.sdk.Authentication</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="309204133%2FPackages%2F1818122103"></span>
+                        <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                      </span></span></div>
+                  <div class="pull-right"></div>
+                </div>
+                <div></div>
+              </div>
+            </div>
+<a data-name="1330404325%2FPackages%2F1818122103" anchor-label="com.vigram.sdk.Bluetooth" id="1330404325%2FPackages%2F1818122103" data-filterable-set=":ViGRAM_SDK:dokkaHtml/release"></a>
+            <div class="table-row" data-filterable-current=":ViGRAM_SDK:dokkaHtml/release" data-filterable-set=":ViGRAM_SDK:dokkaHtml/release">
+              <div>
+                <div class="main-subrow ">
+                  <div class=""><span class="inline-flex">
+                      <div><a href="com.vigram.sdk.Bluetooth/index.html">com.vigram.sdk.Bluetooth</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1330404325%2FPackages%2F1818122103"></span>
+                        <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                      </span></span></div>
+                  <div class="pull-right"></div>
+                </div>
+                <div></div>
+              </div>
+            </div>
+<a data-name="-1314143937%2FPackages%2F1818122103" anchor-label="com.vigram.sdk.Error" id="-1314143937%2FPackages%2F1818122103" data-filterable-set=":ViGRAM_SDK:dokkaHtml/release"></a>
+            <div class="table-row" data-filterable-current=":ViGRAM_SDK:dokkaHtml/release" data-filterable-set=":ViGRAM_SDK:dokkaHtml/release">
+              <div>
+                <div class="main-subrow ">
+                  <div class=""><span class="inline-flex">
+                      <div><a href="com.vigram.sdk.Error/index.html">com.vigram.sdk.Error</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1314143937%2FPackages%2F1818122103"></span>
+                        <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                      </span></span></div>
+                  <div class="pull-right"></div>
+                </div>
+                <div></div>
+              </div>
+            </div>
+<a data-name="197418719%2FPackages%2F1818122103" anchor-label="com.vigram.sdk.General" id="197418719%2FPackages%2F1818122103" data-filterable-set=":ViGRAM_SDK:dokkaHtml/release"></a>
+            <div class="table-row" data-filterable-current=":ViGRAM_SDK:dokkaHtml/release" data-filterable-set=":ViGRAM_SDK:dokkaHtml/release">
+              <div>
+                <div class="main-subrow ">
+                  <div class=""><span class="inline-flex">
+                      <div><a href="com.vigram.sdk.General/index.html">com.vigram.sdk.General</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="197418719%2FPackages%2F1818122103"></span>
+                        <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                      </span></span></div>
+                  <div class="pull-right"></div>
+                </div>
+                <div></div>
+              </div>
+            </div>
+<a data-name="-210590047%2FPackages%2F1818122103" anchor-label="com.vigram.sdk.GPS" id="-210590047%2FPackages%2F1818122103" data-filterable-set=":ViGRAM_SDK:dokkaHtml/release"></a>
+            <div class="table-row" data-filterable-current=":ViGRAM_SDK:dokkaHtml/release" data-filterable-set=":ViGRAM_SDK:dokkaHtml/release">
+              <div>
+                <div class="main-subrow ">
+                  <div class=""><span class="inline-flex">
+                      <div><a href="com.vigram.sdk.GPS/index.html">com.vigram.sdk.GPS</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-210590047%2FPackages%2F1818122103"></span>
+                        <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                      </span></span></div>
+                  <div class="pull-right"></div>
+                </div>
+                <div></div>
+              </div>
+            </div>
+<a data-name="-105418686%2FPackages%2F1818122103" anchor-label="com.vigram.sdk.Laser" id="-105418686%2FPackages%2F1818122103" data-filterable-set=":ViGRAM_SDK:dokkaHtml/release"></a>
+            <div class="table-row" data-filterable-current=":ViGRAM_SDK:dokkaHtml/release" data-filterable-set=":ViGRAM_SDK:dokkaHtml/release">
+              <div>
+                <div class="main-subrow ">
+                  <div class=""><span class="inline-flex">
+                      <div><a href="
+com.vigram.sdk.Laser/index.html">com.vigram.sdk.Laser</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-105418686%2FPackages%2F1818122103"></span>
+                        <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                      </span></span></div>
+                  <div class="pull-right"></div>
+                </div>
+                <div></div>
+              </div>
+            </div>
+<a data-name="-276597571%2FPackages%2F1818122103" anchor-label="com.vigram.sdk.Logger" id="-276597571%2FPackages%2F1818122103" data-filterable-set=":ViGRAM_SDK:dokkaHtml/release"></a>
+            <div class="table-row" data-filterable-current=":ViGRAM_SDK:dokkaHtml/release" data-filterable-set=":ViGRAM_SDK:dokkaHtml/release">
+              <div>
+                <div class="main-subrow ">
+                  <div class=""><span class="inline-flex">
+                      <div><a href="com.vigram.sdk.Logger/index.html">com.vigram.sdk.Logger</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-276597571%2FPackages%2F1818122103"></span>
+                        <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                      </span></span></div>
+                  <div class="pull-right"></div>
+                </div>
+                <div></div>
+              </div>
+            </div>
+<a data-name="-233427689%2FPackages%2F1818122103" anchor-label="com.vigram.sdk.Models" id="-233427689%2FPackages%2F1818122103" data-filterable-set=":ViGRAM_SDK:dokkaHtml/release"></a>
+            <div class="table-row" data-filterable-current=":ViGRAM_SDK:dokkaHtml/release" data-filterable-set=":ViGRAM_SDK:dokkaHtml/release">
+              <div>
+                <div class="main-subrow ">
+                  <div class=""><span class="inline-flex">
+                      <div><a href="com.vigram.sdk.Models/index.html">com.vigram.sdk.Models</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-233427689%2FPackages%2F1818122103"></span>
+                        <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                      </span></span></div>
+                  <div class="pull-right"></div>
+                </div>
+                <div></div>
+              </div>
+            </div>
+<a data-name="-662651580%2FPackages%2F1818122103" anchor-label="com.vigram.sdk.Models.Satellite" id="-662651580%2FPackages%2F1818122103" data-filterable-set=":ViGRAM_SDK:dokkaHtml/release"></a>
+            <div class="table-row" data-filterable-current=":ViGRAM_SDK:dokkaHtml/release" data-filterable-set=":ViGRAM_SDK:dokkaHtml/release">
+              <div>
+                <div class="main-subrow ">
+                  <div class=""><span class="inline-flex">
+                      <div><a href="com.vigram.sdk.Models.Satellite/index.html">com.vigram.sdk.Models.Satellite</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-662651580%2FPackages%2F1818122103"></span>
+                        <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                      </span></span></div>
+                  <div class="pull-right"></div>
+                </div>
+                <div></div>
+              </div>
+            </div>
+<a data-name="-415855296%2FPackages%2F1818122103" anchor-label="com.vigram.sdk.Models.UBXMessages" id="-415855296%2FPackages%2F1818122103" data-filterable-set=":ViGRAM_SDK:dokkaHtml/release"></a>
+            <div class="table-row" data-filterable-current=":ViGRAM_SDK:dokkaHtml/release" data-filterable-set=":ViGRAM_SDK:dokkaHtml/release">
+              <div>
+                <div class="main-subrow ">
+                  <div class=""><span class="inline-flex">
+                      <div><a href="com.vigram.sdk.Models.UBXMessages/index.html">com.vigram.sdk.Models.UBXMessages</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-415855296%2FPackages%2F1818122103"></span>
+                        <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                      </span></span></div>
+                  <div class="pull-right"></div>
+                </div>
+                <div></div>
+              </div>
+            </div>
+<a data-name="-419142466%2FPackages%2F1818122103" anchor-label="com.vigram.sdk.Modules" id="-419142466%2FPackages%2F1818122103" data-filterable-set=":ViGRAM_SDK:dokkaHtml/release"></a>
+            <div class="table-row" data-filterable-current=":ViGRAM_SDK:dokkaHtml/release" data-filterable-set=":ViGRAM_SDK:dokkaHtml/release">
+              <div>
+                <div class="main-subrow ">
+                  <div class=""><span class="inline-flex">
+                      <div><a href="com.vigram.sdk.Modules/index.html">com.vigram.sdk.Modules</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-419142466%2FPackages%2F1818122103"></span>
+                        <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                      </span></span></div>
+                  <div class="pull-right"></div>
+                </div>
+                <div></div>
+              </div>
+            </div>
+<a data-name="-740897526%2FPackages%2F1818122103" anchor-label="com.vigram.sdk.NTRIP" id="-740897526%2FPackages%2F1818122103" data-filterable-set=":ViGRAM_SDK:dokkaHtml/release"></a>
+            <div class="table-row" data-filterable-current=":ViGRAM_SDK:dokkaHtml/release" data-filterable-set=":ViGRAM_SDK:dokkaHtml/release">
+              <div>
+                <div class="main-subrow ">
+                  <div class=""><span class="inline-flex">
+                      <div><a href="com.vigram.sdk.NTRIP/index.html">com.vigram.sdk.NTRIP</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-740897526%2FPackages%2F1818122103"></span>
+                        <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                      </span></span></div>
+                  <div class="pull-right"></div>
+                </div>
+                <div></div>
+              </div>
+            </div>
+<a data-name="1558610599%2FPackages%2F1818122103" anchor-label="com.vigram.sdk.Parsing" id="1558610599%2FPackages%2F1818122103" data-filterable-set=":ViGRAM_SDK:dokkaHtml/release"></a>
+            <div class="table-row" data-filterable-current=":ViGRAM_SDK:dokkaHtml/release" data-filterable-set=":ViGRAM_SDK:dokkaHtml/release">
+              <div>
+                <div class="main-subrow ">
+                  <div class=""><span class="inline-flex">
+                      <div><a href="com.vigram.sdk.Parsing/index.html">com.vigram.sdk.Parsing</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1558610599%2FPackages%2F1818122103"></span>
+                        <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                      </span></span></div>
+                  <div class="pull-right"></div>
+                </div>
+                <div></div>
+              </div>
+            </div>
+<a data-name="-380397527%2FPackages%2F1818122103" anchor-label="com.vigram.sdk.Peripheral" id="-380397527%2FPackages%2F1818122103" data-filterable-set=":ViGRAM_SDK:dokkaHtml/release"></a>
+            <div class="table-row" data-filterable-current=":ViGRAM_SDK:dokkaHtml/release" data-filterable-set=":ViGRAM_SDK:dokkaHtml/release">
+              <div>
+                <div class="main-subrow ">
+                  <div class=""><span class="inline-flex">
+                      <div><a href="com.vigram.sdk.Peripheral/index.html">com.vigram.sdk.Peripheral</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-380397527%2FPackages%2F1818122103"></span>
+                        <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                      </span></span></div>
+                  <div class="pull-right"></div>
+                </div>
+                <div></div>
+              </div>
+            </div>
+<a data-name="216185050%2FPackages%2F1818122103" anchor-label="com.vigram.sdk.SatelliteCommands" id="216185050%2FPackages%2F1818122103" data-filterable-set=":ViGRAM_SDK:dokkaHtml/release"></a>
+            <div class="table-row" data-filterable-current=":ViGRAM_SDK:dokkaHtml/release" data-filterable-set=":ViGRAM_SDK:dokkaHtml/release">
+              <div>
+                <div class="main-subrow ">
+                  <div class=""><span class="inline-flex">
+                      <div><a href="com.vigram.sdk.SatelliteCommands/index.html">com.vigram.sdk.SatelliteCommands</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="216185050%2FPackages%2F1818122103"></span>
+                        <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                      </span></span></div>
+                  <div class="pull-right"></div>
+                </div>
+                <div></div>
+              </div>
+            </div>
+<a data-name="181272991%2FPackages%2F1818122103" anchor-label="com.vigram.sdk.SinglePoint" id="181272991%2FPackages%2F1818122103" data-filterable-set=":ViGRAM_SDK:dokkaHtml/release"></a>
+            <div class="table-row" data-filterable-current=":ViGRAM_SDK:dokkaHtml/release" data-filterable-set=":ViGRAM_SDK:dokkaHtml/release">
+              <div>
+                <div class="main-subrow ">
+                  <div class=""><span class="inline-flex">
+                      <div><a href="com.vigram.sdk.SinglePoint/index.html">com.vigram.sdk.SinglePoint</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="181272991%2FPackages%2F1818122103"></span>
+                        <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                      </span></span></div>
+                  <div class="pull-right"></div>
+                </div>
+                <div></div>
+              </div>
+            </div>
+<a data-name="-222402865%2FPackages%2F1818122103" anchor-label="com.vigram.sdk.Version" id="-222402865%2FPackages%2F1818122103" data-filterable-set=":ViGRAM_SDK:dokkaHtml/release"></a>
+            <div class="table-row" data-filterable-current=":ViGRAM_SDK:dokkaHtml/release" data-filterable-set=":ViGRAM_SDK:dokkaHtml/release">
+              <div>
+                <div class="main-subrow ">
+                  <div class=""><span class="inline-flex">
+                      <div><a href="com.vigram.sdk.Version/index.html">com.vigram.sdk.Version</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-222402865%2FPackages%2F1818122103"></span>
+                        <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                      </span></span></div>
+                  <div class="pull-right"></div>
+                </div>
+                <div></div>
+              </div>
             </div>
           </div>
         </div>
-        <div></div>
+        <div class="footer"><span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2023 Copyright</span><span class="pull-right"><span>Generated by </span><a href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span></div>
       </div>
     </div>
-<a data-name="309204133%2FPackages%2F1803641070" anchor-label="com.vigram.sdk.Authentication" id="309204133%2FPackages%2F1803641070" data-filterable-set=":ViGRAM_SDK:dokkaHtmlPartial/release"></a>
-    <div class="table-row" data-filterable-current=":ViGRAM_SDK:dokkaHtmlPartial/release" data-filterable-set=":ViGRAM_SDK:dokkaHtmlPartial/release">
-      <div>
-        <div class="main-subrow ">
-          <div class=""><span class="inline-flex">
-              <div><a href="com.vigram.sdk.Authentication/index.html">com.vigram.sdk.Authentication</a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="309204133%2FPackages%2F1803641070"></span>
-                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-              </span></span></div>
-          <div class="pull-right">
-            <div class="platform-tags no-gutters">
-              <div class="platform-tag jvm-like">androidJvm</div>
-            </div>
-          </div>
-        </div>
-        <div></div>
-      </div>
-    </div>
-<a data-name="1330404325%2FPackages%2F1803641070" anchor-label="com.vigram.sdk.Bluetooth" id="1330404325%2FPackages%2F1803641070" data-filterable-set=":ViGRAM_SDK:dokkaHtmlPartial/release"></a>
-    <div class="table-row" data-filterable-current=":ViGRAM_SDK:dokkaHtmlPartial/release" data-filterable-set=":ViGRAM_SDK:dokkaHtmlPartial/release">
-      <div>
-        <div class="main-subrow ">
-          <div class=""><span class="inline-flex">
-              <div><a href="com.vigram.sdk.Bluetooth/index.html">com.vigram.sdk.Bluetooth</a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1330404325%2FPackages%2F1803641070"></span>
-                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-              </span></span></div>
-          <div class="pull-right">
-            <div class="platform-tags no-gutters">
-              <div class="platform-tag jvm-like">androidJvm</div>
-            </div>
-          </div>
-        </div>
-        <div></div>
-      </div>
-    </div>
-<a data-name="-1314143937%2FPackages%2F1803641070" anchor-label="com.vigram.sdk.Error" id="-1314143937%2FPackages%2F1803641070" data-filterable-set=":ViGRAM_SDK:dokkaHtmlPartial/release"></a>
-    <div class="table-row" data-filterable-current=":ViGRAM_SDK:dokkaHtmlPartial/release" data-filterable-set=":ViGRAM_SDK:dokkaHtmlPartial/release">
-      <div>
-        <div class="main-subrow ">
-          <div class=""><span class="inline-flex">
-              <div><a href="com.vigram.sdk.Error/index.html">com.vigram.sdk.Error</a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1314143937%2FPackages%2F1803641070"></span>
-                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-              </span></span></div>
-          <div class="pull-right">
-            <div class="platform-tags no-gutters">
-              <div class="platform-tag jvm-like">androidJvm</div>
-            </div>
-          </div>
-        </div>
-        <div></div>
-      </div>
-    </div>
-<a data-name="197418719%2FPackages%2F1803641070" anchor-label="com.vigram.sdk.General" id="197418719%2FPackages%2F1803641070" data-filterable-set=":ViGRAM_SDK:dokkaHtmlPartial/release"></a>
-    <div class="table-row" data-filterable-current=":ViGRAM_SDK:dokkaHtmlPartial/release" data-filterable-set=":ViGRAM_SDK:dokkaHtmlPartial/release">
-      <div>
-        <div class="main-subrow ">
-          <div class=""><span class="inline-flex">
-              <div><a href="com.vigram.sdk.General/index.html">com.vigram.sdk.General</a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="197418719%2FPackages%2F1803641070"></span>
-                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-              </span></span></div>
-          <div class="pull-right">
-            <div class="platform-tags no-gutters">
-              <div class="platform-tag jvm-like">androidJvm</div>
-            </div>
-          </div>
-        </div>
-        <div></div>
-      </div>
-    </div>
-<a data-name="-210590047%2FPackages%2F1803641070" anchor-label="com.vigram.sdk.GPS" id="-210590047%2FPackages%2F1803641070" data-filterable-set=":ViGRAM_SDK:dokkaHtmlPartial/release"></a>
-    <div class="table-row" data-filterable-current=":ViGRAM_SDK:dokkaHtmlPartial/release" data-filterable-set=":ViGRAM_SDK:dokkaHtmlPartial/release">
-      <div>
-        <div class="main-subrow ">
-          <div class=""><span class="inline-flex">
-              <div><a href="com.vigram.sdk.GPS/index.html">com.vigram.sdk.GPS</a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-210590047%2FPackages%2F1803641070"></span>
-                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-              </span></span></div>
-          <div class="pull-right">
-            <div class="platform-tags no-gutters">
-              <div class="platform-tag jvm-like">androidJvm</div>
-            </div>
-          </div>
-        </div>
-        <div></div>
-      </div>
-    </div>
-<a data-name="-105418686%2FPackages%2F1803641070" anchor-label="com.vigram.sdk.Laser" id="-105418686%2FPackages%2F1803641070" data-filterable-set=":ViGRAM_SDK:dokkaHtmlPartial/release"></a>
-    <div class="table-row" data-filterable-current=":ViGRAM_SDK:dokkaHtmlPartial/release" data-filterable-set=":ViGRAM_SDK:dokkaHtmlPartial/release">
-      <div>
-        <div class="main-subrow ">
-          <div class=""><span class="inline-flex">
-              <div><a href="com.vigram.sdk.Laser/index.html">com.vigram.sdk.Laser</a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-105418686%2FPackages%2F1803641070"></span>
-                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-              </span></span></div>
-          <div class="pull-right">
-            <div class="platform-tags no-gutters">
-              <div class="platform-tag jvm-like">androidJvm</div>
-            </div>
-          </div>
-        </div>
-        <div></div>
-      </div>
-    </div>
-<a data-name="-276597571%2FPackages%2F1803641070" anchor-label="com.vigram.sdk.Logger" id="-276597571%2FPackages%2F1803641070" data-filterable-set=":ViGRAM_SDK:dokkaHtmlPartial/release"></a>
-    <div class="table-row" data-filterable-current=":ViGRAM_SDK:dokkaHtmlPartial/release" data-filterable-set=":ViGRAM_SDK:dokkaHtmlPartial/release">
-      <div>
-        <div class="main-subrow ">
-          <div class=""><span class="inline-flex">
-              <div><a href="com.vigram.sdk.Logger/index.html">com.vigram.sdk.Logger</a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-276597571%2FPackages%2F1803641070"></span>
-                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-              </span></span></div>
-          <div class="pull-right">
-            <div class="platform-tags no-gutters">
-              <div class="platform-tag jvm-like">androidJvm</div>
-            </div>
-          </div>
-        </div>
-        <div></div>
-      </div>
-    </div>
-<a data-name="-233427689%2FPackages%2F1803641070" anchor-label="com.vigram.sdk.Models" id="-233427689%2FPackages%2F1803641070" data-filterable-set=":ViGRAM_SDK:dokkaHtmlPartial/release"></a>
-    <div class="table-row" data-filterable-current=":ViGRAM_SDK:dokkaHtmlPartial/release" data-filterable-set=":ViGRAM_SDK:dokkaHtmlPartial/release">
-      <div>
-        <div class="main-subrow ">
-          <div class=""><span class="inline-flex">
-              <div><a href="com.vigram.sdk.Models/index.html">com.vigram.sdk.Models</a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-233427689%2FPackages%2F1803641070"></span>
-                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-              </span></span></div>
-          <div class="pull-right">
-            <div class="platform-tags no-gutters">
-              <div class="platform-tag jvm-like">androidJvm</div>
-            </div>
-          </div>
-        </div>
-        <div></div>
-      </div>
-    </div>
-<a data-name="-662651580%2FPackages%2F1803641070" anchor-label="com.vigram.sdk.Models.Satellite" id="-662651580%2FPackages%2F1803641070" data-filterable-set=":ViGRAM_SDK:dokkaHtmlPartial/release"></a>
-    <div class="table-row" data-filterable-current=":ViGRAM_SDK:dokkaHtmlPartial/release" data-filterable-set=":ViGRAM_SDK:dokkaHtmlPartial/release">
-      <div>
-        <div class="main-subrow ">
-          <div class=""><span class="inline-flex">
-              <div><a href="com.vigram.sdk.Models.Satellite/index.html">com.vigram.sdk.Models.Satellite</a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-662651580%2FPackages%2F1803641070"></span>
-                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-              </span></span></div>
-          <div class="pull-right">
-            <div class="platform-tags no-gutters">
-              <div class="platform-tag jvm-like">androidJvm</div>
-            </div>
-          </div>
-        </div>
-        <div></div>
-      </div>
-    </div>
-<a data-name="-415855296%2FPackages%2F1803641070" anchor-label="com.vigram.sdk.Models.UBXMessages" id="-415855296%2FPackages%2F1803641070" data-filterable-set=":ViGRAM_SDK:dokkaHtmlPartial/release"></a>
-    <div class="table-row" data-filterable-current=":ViGRAM_SDK:dokkaHtmlPartial/release" data-filterable-set=":ViGRAM_SDK:dokkaHtmlPartial/release">
-      <div>
-        <div class="main-subrow ">
-          <div class=""><span class="inline-flex">
-              <div><a href="com.vigram.sdk.Models.UBXMessages/index.html">com.vigram.sdk.Models.UBXMessages</a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-415855296%2FPackages%2F1803641070"></span>
-                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-              </span></span></div>
-          <div class="pull-right">
-            <div class="platform-tags no-gutters">
-              <div class="platform-tag jvm-like">androidJvm</div>
-            </div>
-          </div>
-        </div>
-        <div></div>
-      </div>
-    </div>
-<a data-name="-419142466%2FPackages%2F1803641070" anchor-label="com.vigram.sdk.Modules" id="-419142466%2FPackages%2F1803641070" data-filterable-set=":ViGRAM_SDK:dokkaHtmlPartial/release"></a>
-    <div class="table-row" data-filterable-current=":ViGRAM_SDK:dokkaHtmlPartial/release" data-filterable-set=":ViGRAM_SDK:dokkaHtmlPartial/release">
-      <div>
-        <div class="main-subrow ">
-          <div class=""><span class="inline-flex">
-              <div><a href="com.vigram.sdk.Modules/index.html">com.vigram.sdk.Modules</a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-419142466%2FPackages%2F1803641070"></span>
-                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-              </span></span></div>
-          <div class="pull-right">
-            <div class="platform-tags no-gutters">
-              <div class="platform-tag jvm-like">androidJvm</div>
-            </div>
-          </div>
-        </div>
-        <div></div>
-      </div>
-    </div>
-<a data-name="-740897526%2FPackages%2F1803641070" anchor-label="com.vigram.sdk.NTRIP" id="-740897526%2FPackages%2F1803641070" data-filterable-set=":ViGRAM_SDK:dokkaHtmlPartial/release"></a>
-    <div class="table-row" data-filterable-current=":ViGRAM_SDK:dokkaHtmlPartial/release" data-filterable-set=":ViGRAM_SDK:dokkaHtmlPartial/release">
-      <div>
-        <div class="main-subrow ">
-          <div class=""><span class="inline-flex">
-              <div><a href="com.vigram.sdk.NTRIP/index.html">com.vigram.sdk.NTRIP</a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-740897526%2FPackages%2F1803641070"></span>
-                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-              </span></span></div>
-          <div class="pull-right">
-            <div class="platform-tags no-gutters">
-              <div class="platform-tag jvm-like">androidJvm</div>
-            </div>
-          </div>
-        </div>
-        <div></div>
-      </div>
-    </div>
-<a data-name="1558610599%2FPackages%2F1803641070" anchor-label="com.vigram.sdk.Parsing" id="1558610599%2FPackages%2F1803641070" data-filterable-set=":ViGRAM_SDK:dokkaHtmlPartial/release"></a>
-    <div class="table-row" data-filterable-current=":ViGRAM_SDK:dokkaHtmlPartial/release" data-filterable-set=":ViGRAM_SDK:dokkaHtmlPartial/release">
-      <div>
-        <div class="main-subrow ">
-          <div class=""><span class="inline-flex">
-              <div><a href="com.vigram.sdk.Parsing/index.html">com.vigram.sdk.Parsing</a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1558610599%2FPackages%2F1803641070"></span>
-                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-              </span></span></div>
-          <div class="pull-right">
-            <div class="platform-tags no-gutters">
-              <div class="platform-tag jvm-like">androidJvm</div>
-            </div>
-          </div>
-        </div>
-        <div></div>
-      </div>
-    </div>
-<a data-name="-380397527%2FPackages%2F1803641070" anchor-label="com.vigram.sdk.Peripheral" id="-380397527%2FPackages%2F1803641070" data-filterable-set=":ViGRAM_SDK:dokkaHtmlPartial/release"></a>
-    <div class="table-row" data-filterable-current=":ViGRAM_SDK:dokkaHtmlPartial/release" data-filterable-set=":ViGRAM_SDK:dokkaHtmlPartial/release">
-      <div>
-        <div class="main-subrow ">
-          <div class=""><span class="inline-flex">
-              <div><a href="com.vigram.sdk.Peripheral/index.html">com.vigram.sdk.Peripheral</a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-380397527%2FPackages%2F1803641070"></span>
-                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-              </span></span></div>
-          <div class="pull-right">
-            <div class="platform-tags no-gutters">
-              <div class="platform-tag jvm-like">androidJvm</div>
-            </div>
-          </div>
-        </div>
-        <div></div>
-      </div>
-    </div>
-<a data-name="216185050%2FPackages%2F1803641070" anchor-label="com.vigram.sdk.SatelliteCommands" id="216185050%2FPackages%2F1803641070" data-filterable-set=":ViGRAM_SDK:dokkaHtmlPartial/release"></a>
-    <div class="table-row" data-filterable-current=":ViGRAM_SDK:dokkaHtmlPartial/release" data-filterable-set=":ViGRAM_SDK:dokkaHtmlPartial/release">
-      <div>
-        <div class="main-subrow ">
-          <div class=""><span class="inline-flex">
-              <div><a href="com.vigram.sdk.SatelliteCommands/index.html">com.vigram.sdk.SatelliteCommands</a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="216185050%2FPackages%2F1803641070"></span>
-                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-              </span></span></div>
-          <div class="pull-right">
-            <div class="platform-tags no-gutters">
-              <div class="platform-tag jvm-like">androidJvm</div>
-            </div>
-          </div>
-        </div>
-        <div></div>
-      </div>
-    </div>
-<a data-name="181272991%2FPackages%2F1803641070" anchor-label="com.vigram.sdk.SinglePoint" id="181272991%2FPackages%2F1803641070" data-filterable-set=":ViGRAM_SDK:dokkaHtmlPartial/release"></a>
-    <div class="table-row" data-filterable-current=":ViGRAM_SDK:dokkaHtmlPartial/release" data-filterable-set=":ViGRAM_SDK:dokkaHtmlPartial/release">
-      <div>
-        <div class="main-subrow ">
-          <div class=""><span class="inline-flex">
-              <div><a href="com.vigram.sdk.SinglePoint/index.html">com.vigram.sdk.SinglePoint</a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="181272991%2FPackages%2F1803641070"></span>
-                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-              </span></span></div>
-          <div class="pull-right">
-            <div class="platform-tags no-gutters">
-              <div class="platform-tag jvm-like">androidJvm</div>
-            </div>
-          </div>
-        </div>
-        <div></div>
-      </div>
-    </div>
-<a data-name="1605681839%2FPackages%2F1803641070" anchor-label="com.vigram.sdk.States" id="1605681839%2FPackages%2F1803641070" data-filterable-set=":ViGRAM_SDK:dokkaHtmlPartial/release"></a>
-    <div class="table-row" data-filterable-current=":ViGRAM_SDK:dokkaHtmlPartial/release" data-filterable-set=":ViGRAM_SDK:dokkaHtmlPartial/release">
-      <div>
-        <div class="main-subrow ">
-          <div class=""><span class="inline-flex">
-              <div><a href="com.vigram.sdk.States/index.html">com.vigram.sdk.States</a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1605681839%2FPackages%2F1803641070"></span>
-                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-              </span></span></div>
-          <div class="pull-right">
-            <div class="platform-tags no-gutters">
-              <div class="platform-tag jvm-like">androidJvm</div>
-            </div>
-          </div>
-        </div>
-        <div></div>
-      </div>
-    </div>
-<a data-name="-222402865%2FPackages%2F1803641070" anchor-label="com.vigram.sdk.Version" id="-222402865%2FPackages%2F1803641070" data-filterable-set=":ViGRAM_SDK:dokkaHtmlPartial/release"></a>
-    <div class="table-row" data-filterable-current=":ViGRAM_SDK:dokkaHtmlPartial/release" data-filterable-set=":ViGRAM_SDK:dokkaHtmlPartial/release">
-      <div>
-        <div class="main-subrow ">
-          <div class=""><span class="inline-flex">
-              <div><a href="com.vigram.sdk.Version/index.html">com.vigram.sdk.Version</a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-222402865%2FPackages%2F1803641070"></span>
-                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-              </span></span></div>
-          <div class="pull-right">
-            <div class="platform-tags no-gutters">
-              <div class="platform-tag jvm-like">androidJvm</div>
-            </div>
-          </div>
-        </div>
-        <div></div>
-      </div>
-    </div>
-  </div>
-</div>
-      <div class="footer">
-        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2023 Copyright</span><span class="pull-right"><span>Generated by </span><a href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
-      </div>
-    </div>
-</div>
-</body>
+  </body>
 </html>
 

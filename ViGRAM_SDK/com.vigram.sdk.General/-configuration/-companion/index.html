@@ -1,330 +1,299 @@
-<!doctype html>
 <html>
-<head>
+  <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
     <title>Companion</title>
 <link href="../../../../images/logo-icon.svg" rel="icon" type="image/svg"><script>var pathToRoot = "../../../../";</script>    <script>const storage = localStorage.getItem("dokka-dark-mode")
-    if (storage == null) {
-        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
-        if (osDarkSchemePreferred === true) {
-            document.getElementsByTagName("html")[0].classList.add("theme-dark")
-        }
-    } else {
-        const savedDarkMode = JSON.parse(storage)
-        if(savedDarkMode === true) {
-            document.getElementsByTagName("html")[0].classList.add("theme-dark")
-        }
-    }
-    </script>
-<script type="text/javascript" src="../../../../scripts/sourceset_dependencies.js" async></script>
-<link href="../../../../styles/style.css" rel="Stylesheet">
-<link href="../../../../styles/jetbrains-mono.css" rel="Stylesheet">
-<link href="../../../../styles/main.css" rel="Stylesheet">
-<link href="../../../../styles/prism.css" rel="Stylesheet">
-<link href="../../../../styles/logo-styles.css" rel="Stylesheet">
-<script type="text/javascript" src="../../../../scripts/clipboard.js" async></script>
-<script type="text/javascript" src="../../../../scripts/navigation-loader.js" async></script>
-<script type="text/javascript" src="../../../../scripts/platform-content-handler.js" async></script>
-<script type="text/javascript" src="../../../../scripts/main.js" defer></script>
-<script type="text/javascript" src="../../../../scripts/prism.js" async></script>
-<script type="text/javascript" src="../../../../scripts/symbol-parameters-wrapper_deferred.js" defer></script></head>
-<body>
-<div class="navigation-wrapper" id="navigation-wrapper">
-    <div id="leftToggler"><span class="icon-toggler"></span></div>
-    <div class="library-name">
-<a href="../../../../index.html">
-<span>VigramSDK</span>            </a>    </div>
-    <div>
-    </div>
-    <div class="pull-right d-flex">
-        <div class="filter-section" id="filter-section">
-                <button class="platform-tag platform-selector jvm-like" data-active="" data-filter=":ViGRAM_SDK:dokkaHtmlPartial/release">androidJvm</button>
-        </div>
-        <button id="theme-toggle-button"><span id="theme-toggle"></span></button>
+const savedDarkMode = storage ? JSON.parse(storage) : false
+if(savedDarkMode === true){
+    document.getElementsByTagName("html")[0].classList.add("theme-dark")
+}</script>
+<script type="text/javascript" src="../../../../scripts/sourceset_dependencies.js" async="async"></script><link href="../../../../styles/style.css" rel="Stylesheet"><link href="../../../../styles/jetbrains-mono.css" rel="Stylesheet"><link href="../../../../styles/main.css" rel="Stylesheet"><link href="../../../../styles/prism.css" rel="Stylesheet"><link href="../../../../styles/logo-styles.css" rel="Stylesheet"><script type="text/javascript" src="../../../../scripts/clipboard.js" async="async"></script><script type="text/javascript" src="../../../../scripts/navigation-loader.js" async="async"></script><script type="text/javascript" src="../../../../scripts/platform-content-handler.js" async="async"></script><script type="text/javascript" src="../../../../scripts/main.js" defer="defer"></script><script type="text/javascript" src="../../../../scripts/prism.js" async="async"></script>  </head>
+  <body>
+    <div class="navigation-wrapper" id="navigation-wrapper">
+      <div id="leftToggler"><span class="icon-toggler"></span></div>
+      <div class="library-name"><a href="../../../../index.html">ViGRAM_SDK</a></div>
+      <div>1.2.0</div>
+      <div class="pull-right d-flex"><button id="theme-toggle-button"><span id="theme-toggle"></span></button>
         <div id="searchBar"></div>
+      </div>
     </div>
-</div>
-<div id="container">
-    <div id="leftColumn">
+    <div id="container">
+      <div id="leftColumn">
         <div id="sideMenu"></div>
-    </div>
-    <div id="main">
-<div class="main-content" data-page-type="classlike" id="content" pageids="ViGRAM_SDK::com.vigram.sdk.General/Configuration.Companion///PointingToDeclaration//1803641070">
-  <div class="breadcrumbs"><a href="../../../index.html">ViGRAM_SDK</a><span class="delimiter">/</span><a href="../../index.html">com.vigram.sdk.General</a><span class="delimiter">/</span><a href="../index.html">Configuration</a><span class="delimiter">/</span><span class="current">Companion</span></div>
-  <div class="cover ">
-    <h1 class="cover"><span><span>Companion</span></span></h1>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ViGRAM_SDK:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">object </span><a href="index.html">Companion</a></div></div></div>
-  </div>
-  <div class="tabbedcontent">
-    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button></div>
-    <div class="tabs-section-body">
-      <div data-togglable="PROPERTY">
-        <h2 class="">Properties</h2>
-        <div class="table"><a data-name="-1502682430%2FProperties%2F1803641070" anchor-label="bleSendInterval" id="-1502682430%2FProperties%2F1803641070" data-filterable-set=":ViGRAM_SDK:dokkaHtmlPartial/release"></a>
-          <div class="table-row" data-filterable-current=":ViGRAM_SDK:dokkaHtmlPartial/release" data-filterable-set=":ViGRAM_SDK:dokkaHtmlPartial/release">
-            <div class="main-subrow keyValue ">
-              <div class=""><span class="inline-flex">
-                  <div><a href="ble-send-interval.html"><span>ble</span><wbr><span>Send</span><wbr><span><span>Interval</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1502682430%2FProperties%2F1803641070"></span>
-                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                  </span></span></div>
-              <div>
-                <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ViGRAM_SDK:dokkaHtmlPartial/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.jvm/-jvm-field/index.html"><span class="token annotation builtin">JvmField</span></a></div></div><span class="token keyword"></span><span class="token keyword">var </span><a href="ble-send-interval.html">bleSendInterval</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html">Double</a></div><div class="brief "><p class="paragraph">The time interval to wait between sending BLE messages. Once a message is sent, the specified amount of time will be waited, before the next message is sent.</p></div></div></div>
-                </div>
-              </div>
-            </div>
+      </div>
+      <div id="main">
+        <div class="main-content" id="content" pageIds="ViGRAM_SDK::com.vigram.sdk.General/Configuration.Companion///PointingToDeclaration//1818122103">
+          <div class="breadcrumbs"><a href="../../../../index.html">ViGRAM_SDK</a>/<a href="../../index.html">com.vigram.sdk.General</a>/<a href="../index.html">Configuration</a>/<a href="index.html">Companion</a></div>
+          <div class="cover ">
+            <h1 class="cover"><span><span>Companion</span></span></h1>
+            <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":ViGRAM_SDK:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">object </span><a href="index.html">Companion</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
           </div>
-<a data-name="-1804238771%2FProperties%2F1803641070" anchor-label="bleWriteTimeout" id="-1804238771%2FProperties%2F1803641070" data-filterable-set=":ViGRAM_SDK:dokkaHtmlPartial/release"></a>
-          <div class="table-row" data-filterable-current=":ViGRAM_SDK:dokkaHtmlPartial/release" data-filterable-set=":ViGRAM_SDK:dokkaHtmlPartial/release">
-            <div class="main-subrow keyValue ">
-              <div class=""><span class="inline-flex">
-                  <div><a href="ble-write-timeout.html"><span>ble</span><wbr><span>Write</span><wbr><span><span>Timeout</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1804238771%2FProperties%2F1803641070"></span>
-                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                  </span></span></div>
-              <div>
-                <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ViGRAM_SDK:dokkaHtmlPartial/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.jvm/-jvm-field/index.html"><span class="token annotation builtin">JvmField</span></a></div></div><span class="token keyword"></span><span class="token keyword">var </span><a href="ble-write-timeout.html">bleWriteTimeout</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html">Double</a></div><div class="brief "><p class="paragraph">The timeout interval to cancel a write operation over Bluetooth Low Energy connections. Since writing operations over Bluetooth Low Energy connections might take quite long, if the connection is unreliable, a timeout interval is used to determine when a connection has failed to be sent and needs to be cancelled.</p></div></div></div>
+          <div class="tabbedcontent">
+            <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="Properties">Properties</button></div>
+            <div class="tabs-section-body">
+              <h2 class="">Properties</h2>
+              <div class="table" data-togglable="Properties"><a data-name="-1502682430%2FProperties%2F1818122103" anchor-label="bleSendInterval" id="-1502682430%2FProperties%2F1818122103" data-filterable-set=":ViGRAM_SDK:dokkaHtml/release"></a>
+                <div class="table-row" data-filterable-current=":ViGRAM_SDK:dokkaHtml/release" data-filterable-set=":ViGRAM_SDK:dokkaHtml/release">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex">
+                        <div><a href="ble-send-interval.html">bleSendInterval</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1502682430%2FProperties%2F1818122103"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title">
+                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":ViGRAM_SDK:dokkaHtml/release"><a data-name="-1502682430%2FProperties%2F1818122103" anchor-label="bleSendInterval" id="-1502682430%2FProperties%2F1818122103" data-filterable-set=":ViGRAM_SDK:dokkaHtml/release"></a><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation">@</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.jvm/-jvm-field/index.html"><span class="token annotation">JvmField</span></a></div></div><span class="token keyword"></span><span class="token keyword">var </span><a href="ble-send-interval.html">bleSendInterval</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html">Double</a><span class="token operator"> = </span><span class="token constant">0.01</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><a data-name="-1502682430%2FProperties%2F1818122103" anchor-label="bleSendInterval" id="-1502682430%2FProperties%2F1818122103" data-filterable-set=":ViGRAM_SDK:dokkaHtml/release"></a><p class="paragraph">The time interval to wait between sending BLE messages. Once a message is sent, the specified amount of time will be waited, before the next message is sent.</p></div></div></div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </div>
-          </div>
-<a data-name="-1924874121%2FProperties%2F1803641070" anchor-label="debug" id="-1924874121%2FProperties%2F1803641070" data-filterable-set=":ViGRAM_SDK:dokkaHtmlPartial/release"></a>
-          <div class="table-row" data-filterable-current=":ViGRAM_SDK:dokkaHtmlPartial/release" data-filterable-set=":ViGRAM_SDK:dokkaHtmlPartial/release">
-            <div class="main-subrow keyValue ">
-              <div class=""><span class="inline-flex">
-                  <div><a href="debug.html"><span><span>debug</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1924874121%2FProperties%2F1803641070"></span>
-                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                  </span></span></div>
-              <div>
-                <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ViGRAM_SDK:dokkaHtmlPartial/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.jvm/-jvm-field/index.html"><span class="token annotation builtin">JvmField</span></a></div></div><span class="token keyword"></span><span class="token keyword">var </span><a href="debug.html">debug</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">When set to <code class="lang-kotlin">true</code>, this flag causes more verbose log output.</p></div></div></div>
+<a data-name="-1804238771%2FProperties%2F1818122103" anchor-label="bleWriteTimeout" id="-1804238771%2FProperties%2F1818122103" data-filterable-set=":ViGRAM_SDK:dokkaHtml/release"></a>
+                <div class="table-row" data-filterable-current=":ViGRAM_SDK:dokkaHtml/release" data-filterable-set=":ViGRAM_SDK:dokkaHtml/release">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex">
+                        <div><a href="ble-write-timeout.html">bleWriteTimeout</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1804238771%2FProperties%2F1818122103"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title">
+                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":ViGRAM_SDK:dokkaHtml/release"><a data-name="-1804238771%2FProperties%2F1818122103" anchor-label="bleWriteTimeout" id="-1804238771%2FProperties%2F1818122103" data-filterable-set=":ViGRAM_SDK:dokkaHtml/release"></a><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation">@</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.jvm/-jvm-field/index.html"><span class="token annotation">JvmField</span></a></div></div><span class="token keyword"></span><span class="token keyword">var </span><a href="ble-write-timeout.html">bleWriteTimeout</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html">Double</a><span class="token operator"> = </span><span class="token constant">5.0</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><a data-name="-1804238771%2FProperties%2F1818122103" anchor-label="bleWriteTimeout" id="-1804238771%2FProperties%2F1818122103" data-filterable-set=":ViGRAM_SDK:dokkaHtml/release"></a><p class="paragraph">The timeout interval to cancel a write operation over Bluetooth Low Energy connections. Since writing operations over Bluetooth Low Energy connections might take quite long, if the connection is unreliable, a timeout interval is used to determine when a connection has failed to be sent and needs to be cancelled.</p></div></div></div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </div>
-          </div>
-<a data-name="-1434614084%2FProperties%2F1803641070" anchor-label="deviceBLEPacketSize" id="-1434614084%2FProperties%2F1803641070" data-filterable-set=":ViGRAM_SDK:dokkaHtmlPartial/release"></a>
-          <div class="table-row" data-filterable-current=":ViGRAM_SDK:dokkaHtmlPartial/release" data-filterable-set=":ViGRAM_SDK:dokkaHtmlPartial/release">
-            <div class="main-subrow keyValue ">
-              <div class=""><span class="inline-flex">
-                  <div><a href="device-b-l-e-packet-size.html"><span>device</span><wbr><span>BLEPacket</span><wbr><span><span>Size</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1434614084%2FProperties%2F1803641070"></span>
-                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                  </span></span></div>
-              <div>
-                <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ViGRAM_SDK:dokkaHtmlPartial/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.jvm/-jvm-field/index.html"><span class="token annotation builtin">JvmField</span></a></div></div><span class="token keyword"></span><span class="token keyword">var </span><a href="device-b-l-e-packet-size.html">deviceBLEPacketSize</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></div><div class="brief "><p class="paragraph">The packet size for device messages sent over Bluetooth Low Energy connections. Device messages sent over bluetooth with a size larger than this value will be split up into smaller packets and sent sequentially without the interferences of concurrently sent messages.</p></div></div></div>
+<a data-name="-1924874121%2FProperties%2F1818122103" anchor-label="debug" id="-1924874121%2FProperties%2F1818122103" data-filterable-set=":ViGRAM_SDK:dokkaHtml/release"></a>
+                <div class="table-row" data-filterable-current=":ViGRAM_SDK:dokkaHtml/release" data-filterable-set=":ViGRAM_SDK:dokkaHtml/release">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex">
+                        <div><a href="debug.html">debug</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1924874121%2FProperties%2F1818122103"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title">
+                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":ViGRAM_SDK:dokkaHtml/release"><a data-name="-1924874121%2FProperties%2F1818122103" anchor-label="debug" id="-1924874121%2FProperties%2F1818122103" data-filterable-set=":ViGRAM_SDK:dokkaHtml/release"></a><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation">@</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.jvm/-jvm-field/index.html"><span class="token annotation">JvmField</span></a></div></div><span class="token keyword"></span><span class="token keyword">var </span><a href="debug.html">debug</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">false</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><a data-name="-1924874121%2FProperties%2F1818122103" anchor-label="debug" id="-1924874121%2FProperties%2F1818122103" data-filterable-set=":ViGRAM_SDK:dokkaHtml/release"></a><p class="paragraph">When set to <code class="lang-kotlin">true</code>, this flag causes more verbose log output.</p></div></div></div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </div>
-          </div>
-<a data-name="373874419%2FProperties%2F1803641070" anchor-label="deviceHeight" id="373874419%2FProperties%2F1803641070" data-filterable-set=":ViGRAM_SDK:dokkaHtmlPartial/release"></a>
-          <div class="table-row" data-filterable-current=":ViGRAM_SDK:dokkaHtmlPartial/release" data-filterable-set=":ViGRAM_SDK:dokkaHtmlPartial/release">
-            <div class="main-subrow keyValue ">
-              <div class=""><span class="inline-flex">
-                  <div><a href="device-height.html"><span>device</span><wbr><span><span>Height</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="373874419%2FProperties%2F1803641070"></span>
-                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                  </span></span></div>
-              <div>
-                <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ViGRAM_SDK:dokkaHtmlPartial/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.jvm/-jvm-field/index.html"><span class="token annotation builtin">JvmField</span></a></div></div><span class="token keyword"></span><span class="token keyword">var </span><a href="device-height.html">deviceHeight</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html">Double</a></div><div class="brief "><p class="paragraph">Device(ViDoc) height (cm)</p></div></div></div>
+<a data-name="-1434614084%2FProperties%2F1818122103" anchor-label="deviceBLEPacketSize" id="-1434614084%2FProperties%2F1818122103" data-filterable-set=":ViGRAM_SDK:dokkaHtml/release"></a>
+                <div class="table-row" data-filterable-current=":ViGRAM_SDK:dokkaHtml/release" data-filterable-set=":ViGRAM_SDK:dokkaHtml/release">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex">
+                        <div><a href="device-b-l-e-packet-size.html">deviceBLEPacketSize</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1434614084%2FProperties%2F1818122103"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title">
+                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":ViGRAM_SDK:dokkaHtml/release"><a data-name="-1434614084%2FProperties%2F1818122103" anchor-label="deviceBLEPacketSize" id="-1434614084%2FProperties%2F1818122103" data-filterable-set=":ViGRAM_SDK:dokkaHtml/release"></a><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation">@</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.jvm/-jvm-field/index.html"><span class="token annotation">JvmField</span></a></div></div><span class="token keyword"></span><span class="token keyword">var </span><a href="device-b-l-e-packet-size.html">deviceBLEPacketSize</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">4</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><a data-name="-1434614084%2FProperties%2F1818122103" anchor-label="deviceBLEPacketSize" id="-1434614084%2FProperties%2F1818122103" data-filterable-set=":ViGRAM_SDK:dokkaHtml/release"></a><p class="paragraph">The packet size for device messages sent over Bluetooth Low Energy connections. Device messages sent over bluetooth with a size larger than this value will be split up into smaller packets and sent sequentially without the interferences of concurrently sent messages.</p></div></div></div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </div>
-          </div>
-<a data-name="-335673747%2FProperties%2F1803641070" anchor-label="disconnectSignalTimeout" id="-335673747%2FProperties%2F1803641070" data-filterable-set=":ViGRAM_SDK:dokkaHtmlPartial/release"></a>
-          <div class="table-row" data-filterable-current=":ViGRAM_SDK:dokkaHtmlPartial/release" data-filterable-set=":ViGRAM_SDK:dokkaHtmlPartial/release">
-            <div class="main-subrow keyValue ">
-              <div class=""><span class="inline-flex">
-                  <div><a href="disconnect-signal-timeout.html"><span>disconnect</span><wbr><span>Signal</span><wbr><span><span>Timeout</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-335673747%2FProperties%2F1803641070"></span>
-                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                  </span></span></div>
-              <div>
-                <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ViGRAM_SDK:dokkaHtmlPartial/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.jvm/-jvm-field/index.html"><span class="token annotation builtin">JvmField</span></a></div></div><span class="token keyword"></span><span class="token keyword">var </span><a href="disconnect-signal-timeout.html">disconnectSignalTimeout</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html">Double</a></div><div class="brief "><p class="paragraph">The timeout interval to send a disconnect signal when a gpsService is unused but actively connected. NTRIP connections and active bluetooth connections can be quite expensive and/or battery-consuming. A <code class="lang-kotlin">`GPSService`</code> will send out a disconnect signal after <code class="lang-kotlin">`disconnectSignalTimeout`</code> seconds after the service was created or the last recording has been stopped.</p></div></div></div>
+<a data-name="373874419%2FProperties%2F1818122103" anchor-label="deviceHeight" id="373874419%2FProperties%2F1818122103" data-filterable-set=":ViGRAM_SDK:dokkaHtml/release"></a>
+                <div class="table-row" data-filterable-current=":ViGRAM_SDK:dokkaHtml/release" data-filterable-set=":ViGRAM_SDK:dokkaHtml/release">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex">
+                        <div><a href="device-height.html">deviceHeight</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="373874419%2FProperties%2F1818122103"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title">
+                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":ViGRAM_SDK:dokkaHtml/release"><a data-name="373874419%2FProperties%2F1818122103" anchor-label="deviceHeight" id="373874419%2FProperties%2F1818122103" data-filterable-set=":ViGRAM_SDK:dokkaHtml/release"></a><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation">@</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.jvm/-jvm-field/index.html"><span class="token annotation">JvmField</span></a></div></div><span class="token keyword"></span><span class="token keyword">var </span><a href="device-height.html">deviceHeight</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html">Double</a><span class="token operator"> = </span><span class="token constant">15.2</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><a data-name="373874419%2FProperties%2F1818122103" anchor-label="deviceHeight" id="373874419%2FProperties%2F1818122103" data-filterable-set=":ViGRAM_SDK:dokkaHtml/release"></a><p class="paragraph">Device(ViDoc) height (cm)</p></div></div></div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </div>
-          </div>
-<a data-name="1298483350%2FProperties%2F1803641070" anchor-label="forceUpdate" id="1298483350%2FProperties%2F1803641070" data-filterable-set=":ViGRAM_SDK:dokkaHtmlPartial/release"></a>
-          <div class="table-row" data-filterable-current=":ViGRAM_SDK:dokkaHtmlPartial/release" data-filterable-set=":ViGRAM_SDK:dokkaHtmlPartial/release">
-            <div class="main-subrow keyValue ">
-              <div class=""><span class="inline-flex">
-                  <div><a href="force-update.html"><span>force</span><wbr><span><span>Update</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1298483350%2FProperties%2F1803641070"></span>
-                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                  </span></span></div>
-              <div>
-                <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ViGRAM_SDK:dokkaHtmlPartial/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.jvm/-jvm-field/index.html"><span class="token annotation builtin">JvmField</span></a></div></div><span class="token keyword"></span><span class="token keyword">var </span><a href="force-update.html">forceUpdate</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">The download of the latest firmware version and the update will take place in forced mode, be careful when connecting the Vidoc.</p></div></div></div>
+<a data-name="-335673747%2FProperties%2F1818122103" anchor-label="disconnectSignalTimeout" id="-335673747%2FProperties%2F1818122103" data-filterable-set=":ViGRAM_SDK:dokkaHtml/release"></a>
+                <div class="table-row" data-filterable-current=":ViGRAM_SDK:dokkaHtml/release" data-filterable-set=":ViGRAM_SDK:dokkaHtml/release">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex">
+                        <div><a href="disconnect-signal-timeout.html">disconnectSignalTimeout</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-335673747%2FProperties%2F1818122103"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title">
+                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":ViGRAM_SDK:dokkaHtml/release"><a data-name="-335673747%2FProperties%2F1818122103" anchor-label="disconnectSignalTimeout" id="-335673747%2FProperties%2F1818122103" data-filterable-set=":ViGRAM_SDK:dokkaHtml/release"></a><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation">@</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.jvm/-jvm-field/index.html"><span class="token annotation">JvmField</span></a></div></div><span class="token keyword"></span><span class="token keyword">var </span><a href="disconnect-signal-timeout.html">disconnectSignalTimeout</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html">Double</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><a data-name="-335673747%2FProperties%2F1818122103" anchor-label="disconnectSignalTimeout" id="-335673747%2FProperties%2F1818122103" data-filterable-set=":ViGRAM_SDK:dokkaHtml/release"></a><p class="paragraph">The timeout interval to send a disconnect signal when a gpsService is unused but actively connected. NTRIP connections and active bluetooth connections can be quite expensive and/or battery-consuming. A <code class="lang-kotlin">`GPSService`</code> will send out a disconnect signal after <code class="lang-kotlin">`disconnectSignalTimeout`</code> seconds after the service was created or the last recording has been stopped.</p></div></div></div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </div>
-          </div>
-<a data-name="-2124907828%2FProperties%2F1803641070" anchor-label="maximumBLEPacketSize" id="-2124907828%2FProperties%2F1803641070" data-filterable-set=":ViGRAM_SDK:dokkaHtmlPartial/release"></a>
-          <div class="table-row" data-filterable-current=":ViGRAM_SDK:dokkaHtmlPartial/release" data-filterable-set=":ViGRAM_SDK:dokkaHtmlPartial/release">
-            <div class="main-subrow keyValue ">
-              <div class=""><span class="inline-flex">
-                  <div><a href="maximum-b-l-e-packet-size.html"><span>maximum</span><wbr><span>BLEPacket</span><wbr><span><span>Size</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2124907828%2FProperties%2F1803641070"></span>
-                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                  </span></span></div>
-              <div>
-                <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ViGRAM_SDK:dokkaHtmlPartial/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.jvm/-jvm-field/index.html"><span class="token annotation builtin">JvmField</span></a></div></div><span class="token keyword"></span><span class="token keyword">var </span><a href="maximum-b-l-e-packet-size.html">maximumBLEPacketSize</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></div><div class="brief "><p class="paragraph">The maximum packet size sent over Bluetooth Low Energy connections. Messages sent over bluetooth with a size larger than this value will be split up into smaller packets and sent sequentially without the interferences of concurrently sent messages.</p></div></div></div>
+<a data-name="1298483350%2FProperties%2F1818122103" anchor-label="forceUpdate" id="1298483350%2FProperties%2F1818122103" data-filterable-set=":ViGRAM_SDK:dokkaHtml/release"></a>
+                <div class="table-row" data-filterable-current=":ViGRAM_SDK:dokkaHtml/release" data-filterable-set=":ViGRAM_SDK:dokkaHtml/release">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex">
+                        <div><a href="force-update.html">forceUpdate</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1298483350%2FProperties%2F1818122103"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title">
+                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":ViGRAM_SDK:dokkaHtml/release"><a data-name="1298483350%2FProperties%2F1818122103" anchor-label="forceUpdate" id="1298483350%2FProperties%2F1818122103" data-filterable-set=":ViGRAM_SDK:dokkaHtml/release"></a><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation">@</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.jvm/-jvm-field/index.html"><span class="token annotation">JvmField</span></a></div></div><span class="token keyword"></span><span class="token keyword">var </span><a href="force-update.html">forceUpdate</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">false</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><a data-name="1298483350%2FProperties%2F1818122103" anchor-label="forceUpdate" id="1298483350%2FProperties%2F1818122103" data-filterable-set=":ViGRAM_SDK:dokkaHtml/release"></a><p class="paragraph">The download of the latest firmware version and the update will take place in forced mode, be careful when connecting the Vidoc.</p></div></div></div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </div>
-          </div>
-<a data-name="1490513097%2FProperties%2F1803641070" anchor-label="maximumSinglePointAltitudeDifference" id="1490513097%2FProperties%2F1803641070" data-filterable-set=":ViGRAM_SDK:dokkaHtmlPartial/release"></a>
-          <div class="table-row" data-filterable-current=":ViGRAM_SDK:dokkaHtmlPartial/release" data-filterable-set=":ViGRAM_SDK:dokkaHtmlPartial/release">
-            <div class="main-subrow keyValue ">
-              <div class=""><span class="inline-flex">
-                  <div><a href="maximum-single-point-altitude-difference.html"><span>maximum</span><wbr><span>Single</span><wbr><span>Point</span><wbr><span>Altitude</span><wbr><span><span>Difference</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1490513097%2FProperties%2F1803641070"></span>
-                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                  </span></span></div>
-              <div>
-                <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ViGRAM_SDK:dokkaHtmlPartial/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.jvm/-jvm-field/index.html"><span class="token annotation builtin">JvmField</span></a></div></div><span class="token keyword"></span><span class="token keyword">var </span><a href="maximum-single-point-altitude-difference.html">maximumSinglePointAltitudeDifference</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html">Double</a></div><div class="brief "><p class="paragraph">The maximum altitude difference to be tolerated between individual measurements during single point recordings. If the altitude of an individual measurement differs from the median measurement by more than this value, it is not included in the final calculation.</p></div></div></div>
+<a data-name="-2124907828%2FProperties%2F1818122103" anchor-label="maximumBLEPacketSize" id="-2124907828%2FProperties%2F1818122103" data-filterable-set=":ViGRAM_SDK:dokkaHtml/release"></a>
+                <div class="table-row" data-filterable-current=":ViGRAM_SDK:dokkaHtml/release" data-filterable-set=":ViGRAM_SDK:dokkaHtml/release">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex">
+                        <div><a href="maximum-b-l-e-packet-size.html">maximumBLEPacketSize</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2124907828%2FProperties%2F1818122103"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title">
+                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":ViGRAM_SDK:dokkaHtml/release"><a data-name="-2124907828%2FProperties%2F1818122103" anchor-label="maximumBLEPacketSize" id="-2124907828%2FProperties%2F1818122103" data-filterable-set=":ViGRAM_SDK:dokkaHtml/release"></a><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation">@</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.jvm/-jvm-field/index.html"><span class="token annotation">JvmField</span></a></div></div><span class="token keyword"></span><span class="token keyword">var </span><a href="maximum-b-l-e-packet-size.html">maximumBLEPacketSize</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">50</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><a data-name="-2124907828%2FProperties%2F1818122103" anchor-label="maximumBLEPacketSize" id="-2124907828%2FProperties%2F1818122103" data-filterable-set=":ViGRAM_SDK:dokkaHtml/release"></a><p class="paragraph">The maximum packet size sent over Bluetooth Low Energy connections. Messages sent over bluetooth with a size larger than this value will be split up into smaller packets and sent sequentially without the interferences of concurrently sent messages.</p></div></div></div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </div>
-          </div>
-<a data-name="230142667%2FProperties%2F1803641070" anchor-label="maximumSinglePointHorizontalAccuracy" id="230142667%2FProperties%2F1803641070" data-filterable-set=":ViGRAM_SDK:dokkaHtmlPartial/release"></a>
-          <div class="table-row" data-filterable-current=":ViGRAM_SDK:dokkaHtmlPartial/release" data-filterable-set=":ViGRAM_SDK:dokkaHtmlPartial/release">
-            <div class="main-subrow keyValue ">
-              <div class=""><span class="inline-flex">
-                  <div><a href="maximum-single-point-horizontal-accuracy.html"><span>maximum</span><wbr><span>Single</span><wbr><span>Point</span><wbr><span>Horizontal</span><wbr><span><span>Accuracy</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="230142667%2FProperties%2F1803641070"></span>
-                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                  </span></span></div>
-              <div>
-                <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ViGRAM_SDK:dokkaHtmlPartial/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.jvm/-jvm-field/index.html"><span class="token annotation builtin">JvmField</span></a></div></div><span class="token keyword"></span><span class="token keyword">var </span><a href="maximum-single-point-horizontal-accuracy.html">maximumSinglePointHorizontalAccuracy</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html">Double</a></div><div class="brief "><p class="paragraph">The maximum horizontal accuracy to be tolerated for individual measurements during single point recordings. If the horizontal accuracy of an individual measurement exceeds this value, it is not included in the final calculation.</p></div></div></div>
+<a data-name="1490513097%2FProperties%2F1818122103" anchor-label="maximumSinglePointAltitudeDifference" id="1490513097%2FProperties%2F1818122103" data-filterable-set=":ViGRAM_SDK:dokkaHtml/release"></a>
+                <div class="table-row" data-filterable-current=":ViGRAM_SDK:dokkaHtml/release" data-filterable-set=":ViGRAM_SDK:dokkaHtml/release">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex">
+                        <div><a href="maximum-single-point-altitude-difference.html">maximumSinglePointAltitudeDifference</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1490513097%2FProperties%2F1818122103"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title">
+                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":ViGRAM_SDK:dokkaHtml/release"><a data-name="1490513097%2FProperties%2F1818122103" anchor-label="maximumSinglePointAltitudeDifference" id="1490513097%2FProperties%2F1818122103" data-filterable-set=":ViGRAM_SDK:dokkaHtml/release"></a><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation">@</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.jvm/-jvm-field/index.html"><span class="token annotation">JvmField</span></a></div></div><span class="token keyword"></span><span class="token keyword">var </span><a href="maximum-single-point-altitude-difference.html">maximumSinglePointAltitudeDifference</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html">Double</a><span class="token operator"> = </span><span class="token constant">0.05</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><a data-name="1490513097%2FProperties%2F1818122103" anchor-label="maximumSinglePointAltitudeDifference" id="1490513097%2FProperties%2F1818122103" data-filterable-set=":ViGRAM_SDK:dokkaHtml/release"></a><p class="paragraph">The maximum altitude difference to be tolerated between individual measurements during single point recordings. If the altitude of an individual measurement differs from the median measurement by more than this value, it is not included in the final calculation.</p></div></div></div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </div>
-          </div>
-<a data-name="-1796704135%2FProperties%2F1803641070" anchor-label="maximumSinglePointVerticalAccuracy" id="-1796704135%2FProperties%2F1803641070" data-filterable-set=":ViGRAM_SDK:dokkaHtmlPartial/release"></a>
-          <div class="table-row" data-filterable-current=":ViGRAM_SDK:dokkaHtmlPartial/release" data-filterable-set=":ViGRAM_SDK:dokkaHtmlPartial/release">
-            <div class="main-subrow keyValue ">
-              <div class=""><span class="inline-flex">
-                  <div><a href="maximum-single-point-vertical-accuracy.html"><span>maximum</span><wbr><span>Single</span><wbr><span>Point</span><wbr><span>Vertical</span><wbr><span><span>Accuracy</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1796704135%2FProperties%2F1803641070"></span>
-                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                  </span></span></div>
-              <div>
-                <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ViGRAM_SDK:dokkaHtmlPartial/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.jvm/-jvm-field/index.html"><span class="token annotation builtin">JvmField</span></a></div></div><span class="token keyword"></span><span class="token keyword">var </span><a href="maximum-single-point-vertical-accuracy.html">maximumSinglePointVerticalAccuracy</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html">Double</a></div><div class="brief "><p class="paragraph">The maximum vertical accuracy to be tolerated for individual measurements during single point recordings. If the vertical accuracy of an individual measurement exceeds this value, it is not included in the final calculation.</p></div></div></div>
+<a data-name="230142667%2FProperties%2F1818122103" anchor-label="maximumSinglePointHorizontalAccuracy" id="230142667%2FProperties%2F1818122103" data-filterable-set=":ViGRAM_SDK:dokkaHtml/release"></a>
+                <div class="table-row" data-filterable-current=":ViGRAM_SDK:dokkaHtml/release" data-filterable-set=":ViGRAM_SDK:dokkaHtml/release">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex">
+                        <div><a href="maximum-single-point-horizontal-accuracy.html">maximumSinglePointHorizontalAccuracy</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="230142667%2FProperties%2F1818122103"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title">
+                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":ViGRAM_SDK:dokkaHtml/release"><a data-name="230142667%2FProperties%2F1818122103" anchor-label="maximumSinglePointHorizontalAccuracy" id="230142667%2FProperties%2F1818122103" data-filterable-set=":ViGRAM_SDK:dokkaHtml/release"></a><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation">@</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.jvm/-jvm-field/index.html"><span class="token annotation">JvmField</span></a></div></div><span class="token keyword"></span><span class="token keyword">var </span><a href="maximum-single-point-horizontal-accuracy.html">maximumSinglePointHorizontalAccuracy</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html">Double</a><span class="token operator"> = </span><span class="token constant">0.05</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><a data-name="230142667%2FProperties%2F1818122103" anchor-label="maximumSinglePointHorizontalAccuracy" id="230142667%2FProperties%2F1818122103" data-filterable-set=":ViGRAM_SDK:dokkaHtml/release"></a><p class="paragraph">The maximum horizontal accuracy to be tolerated for individual measurements during single point recordings. If the horizontal accuracy of an individual measurement exceeds this value, it is not included in the final calculation.</p></div></div></div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </div>
-          </div>
-<a data-name="-1517947140%2FProperties%2F1803641070" anchor-label="middleAntenna" id="-1517947140%2FProperties%2F1803641070" data-filterable-set=":ViGRAM_SDK:dokkaHtmlPartial/release"></a>
-          <div class="table-row" data-filterable-current=":ViGRAM_SDK:dokkaHtmlPartial/release" data-filterable-set=":ViGRAM_SDK:dokkaHtmlPartial/release">
-            <div class="main-subrow keyValue ">
-              <div class=""><span class="inline-flex">
-                  <div><a href="middle-antenna.html"><span>middle</span><wbr><span><span>Antenna</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1517947140%2FProperties%2F1803641070"></span>
-                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                  </span></span></div>
-              <div>
-                <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ViGRAM_SDK:dokkaHtmlPartial/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.jvm/-jvm-field/index.html"><span class="token annotation builtin">JvmField</span></a></div></div><span class="token keyword"></span><span class="token keyword">var </span><a href="middle-antenna.html">middleAntenna</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html">Double</a></div><div class="brief "><p class="paragraph">Distance from the bottom of the antenna to the center (cm)</p></div></div></div>
+<a data-name="-1796704135%2FProperties%2F1818122103" anchor-label="maximumSinglePointVerticalAccuracy" id="-1796704135%2FProperties%2F1818122103" data-filterable-set=":ViGRAM_SDK:dokkaHtml/release"></a>
+                <div class="table-row" data-filterable-current=":ViGRAM_SDK:dokkaHtml/release" data-filterable-set=":ViGRAM_SDK:dokkaHtml/release">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex">
+                        <div><a href="maximum-single-point-vertical-accuracy.html">maximumSinglePointVerticalAccuracy</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1796704135%2FProperties%2F1818122103"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title">
+                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":ViGRAM_SDK:dokkaHtml/release"><a data-name="-1796704135%2FProperties%2F1818122103" anchor-label="maximumSinglePointVerticalAccuracy" id="-1796704135%2FProperties%2F1818122103" data-filterable-set=":ViGRAM_SDK:dokkaHtml/release"></a><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation">@</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.jvm/-jvm-field/index.html"><span class="token annotation">JvmField</span></a></div></div><span class="token keyword"></span><span class="token keyword">var </span><a href="maximum-single-point-vertical-accuracy.html">maximumSinglePointVerticalAccuracy</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html">Double</a><span class="token operator"> = </span><span class="token constant">0.05</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><a data-name="-1796704135%2FProperties%2F1818122103" anchor-label="maximumSinglePointVerticalAccuracy" id="-1796704135%2FProperties%2F1818122103" data-filterable-set=":ViGRAM_SDK:dokkaHtml/release"></a><p class="paragraph">The maximum vertical accuracy to be tolerated for individual measurements during single point recordings. If the vertical accuracy of an individual measurement exceeds this value, it is not included in the final calculation.</p></div></div></div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </div>
-          </div>
-<a data-name="-1026363830%2FProperties%2F1803641070" anchor-label="ntripSendInterval" id="-1026363830%2FProperties%2F1803641070" data-filterable-set=":ViGRAM_SDK:dokkaHtmlPartial/release"></a>
-          <div class="table-row" data-filterable-current=":ViGRAM_SDK:dokkaHtmlPartial/release" data-filterable-set=":ViGRAM_SDK:dokkaHtmlPartial/release">
-            <div class="main-subrow keyValue ">
-              <div class=""><span class="inline-flex">
-                  <div><a href="ntrip-send-interval.html"><span>ntrip</span><wbr><span>Send</span><wbr><span><span>Interval</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1026363830%2FProperties%2F1803641070"></span>
-                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                  </span></span></div>
-              <div>
-                <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ViGRAM_SDK:dokkaHtmlPartial/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.jvm/-jvm-field/index.html"><span class="token annotation builtin">JvmField</span></a></div></div><span class="token keyword"></span><span class="token keyword">var </span><a href="ntrip-send-interval.html">ntripSendInterval</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html">Double</a></div><div class="brief "><p class="paragraph">The interval to wait between NMEA-0183 GGA message forwards to the NTRIP correction service. This interval will ensure that GGA messages are not sent in a higher frequency than <code class="lang-kotlin">1 / ntripSendInterval</code>. Setting this interval to 0, will forward all GGA messages to the NTRIP correction service.</p></div></div></div>
+<a data-name="-1517947140%2FProperties%2F1818122103" anchor-label="middleAntenna" id="-1517947140%2FProperties%2F1818122103" data-filterable-set=":ViGRAM_SDK:dokkaHtml/release"></a>
+                <div class="table-row" data-filterable-current=":ViGRAM_SDK:dokkaHtml/release" data-filterable-set=":ViGRAM_SDK:dokkaHtml/release">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex">
+                        <div><a href="middle-antenna.html">middleAntenna</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1517947140%2FProperties%2F1818122103"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title">
+                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":ViGRAM_SDK:dokkaHtml/release"><a data-name="-1517947140%2FProperties%2F1818122103" anchor-label="middleAntenna" id="-1517947140%2FProperties%2F1818122103" data-filterable-set=":ViGRAM_SDK:dokkaHtml/release"></a><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation">@</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.jvm/-jvm-field/index.html"><span class="token annotation">JvmField</span></a></div></div><span class="token keyword"></span><span class="token keyword">var </span><a href="middle-antenna.html">middleAntenna</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html">Double</a><span class="token operator"> = </span><span class="token constant">3.57</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><a data-name="-1517947140%2FProperties%2F1818122103" anchor-label="middleAntenna" id="-1517947140%2FProperties%2F1818122103" data-filterable-set=":ViGRAM_SDK:dokkaHtml/release"></a><p class="paragraph">Distance from the bottom of the antenna to the center (cm)</p></div></div></div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </div>
-          </div>
-<a data-name="-373920030%2FProperties%2F1803641070" anchor-label="ntripTimeout" id="-373920030%2FProperties%2F1803641070" data-filterable-set=":ViGRAM_SDK:dokkaHtmlPartial/release"></a>
-          <div class="table-row" data-filterable-current=":ViGRAM_SDK:dokkaHtmlPartial/release" data-filterable-set=":ViGRAM_SDK:dokkaHtmlPartial/release">
-            <div class="main-subrow keyValue ">
-              <div class=""><span class="inline-flex">
-                  <div><a href="ntrip-timeout.html"><span>ntrip</span><wbr><span><span>Timeout</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-373920030%2FProperties%2F1803641070"></span>
-                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                  </span></span></div>
-              <div>
-                <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ViGRAM_SDK:dokkaHtmlPartial/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.jvm/-jvm-field/index.html"><span class="token annotation builtin">JvmField</span></a></div></div><span class="token keyword"></span><span class="token keyword">var </span><a href="ntrip-timeout.html">ntripTimeout</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></div><div class="brief "><p class="paragraph">The timeout interval to cancel an NTRIP connection attempt. NTRIP connections might take quite some time to be established, especially with an unreliable internet connection.</p></div></div></div>
+<a data-name="-1026363830%2FProperties%2F1818122103" anchor-label="ntripSendInterval" id="-1026363830%2FProperties%2F1818122103" data-filterable-set=":ViGRAM_SDK:dokkaHtml/release"></a>
+                <div class="table-row" data-filterable-current=":ViGRAM_SDK:dokkaHtml/release" data-filterable-set=":ViGRAM_SDK:dokkaHtml/release">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex">
+                        <div><a href="ntrip-send-interval.html">ntripSendInterval</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1026363830%2FProperties%2F1818122103"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title">
+                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":ViGRAM_SDK:dokkaHtml/release"><a data-name="-1026363830%2FProperties%2F1818122103" anchor-label="ntripSendInterval" id="-1026363830%2FProperties%2F1818122103" data-filterable-set=":ViGRAM_SDK:dokkaHtml/release"></a><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation">@</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.jvm/-jvm-field/index.html"><span class="token annotation">JvmField</span></a></div></div><span class="token keyword"></span><span class="token keyword">var </span><a href="ntrip-send-interval.html">ntripSendInterval</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html">Double</a><span class="token operator"> = </span><span class="token constant">0.5</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><a data-name="-1026363830%2FProperties%2F1818122103" anchor-label="ntripSendInterval" id="-1026363830%2FProperties%2F1818122103" data-filterable-set=":ViGRAM_SDK:dokkaHtml/release"></a><p class="paragraph">The interval to wait between NMEA-0183 GGA message forwards to the NTRIP correction service. This interval will ensure that GGA messages are not sent in a higher frequency than <code class="lang-kotlin">1 / ntripSendInterval</code>. Setting this interval to 0, will forward all GGA messages to the NTRIP correction service.</p></div></div></div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </div>
-          </div>
-<a data-name="-885658155%2FProperties%2F1803641070" anchor-label="peripheralStartTimeout" id="-885658155%2FProperties%2F1803641070" data-filterable-set=":ViGRAM_SDK:dokkaHtmlPartial/release"></a>
-          <div class="table-row" data-filterable-current=":ViGRAM_SDK:dokkaHtmlPartial/release" data-filterable-set=":ViGRAM_SDK:dokkaHtmlPartial/release">
-            <div class="main-subrow keyValue ">
-              <div class=""><span class="inline-flex">
-                  <div><a href="peripheral-start-timeout.html"><span>peripheral</span><wbr><span>Start</span><wbr><span><span>Timeout</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-885658155%2FProperties%2F1803641070"></span>
-                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                  </span></span></div>
-              <div>
-                <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ViGRAM_SDK:dokkaHtmlPartial/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.jvm/-jvm-field/index.html"><span class="token annotation builtin">JvmField</span></a></div></div><span class="token keyword"></span><span class="token keyword">var </span><a href="peripheral-start-timeout.html">peripheralStartTimeout</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html">Long</a></div><div class="brief "><p class="paragraph">The timeout interval to wait during start after the connection has been established and before configuration starts.</p></div></div></div>
+<a data-name="-373920030%2FProperties%2F1818122103" anchor-label="ntripTimeout" id="-373920030%2FProperties%2F1818122103" data-filterable-set=":ViGRAM_SDK:dokkaHtml/release"></a>
+                <div class="table-row" data-filterable-current=":ViGRAM_SDK:dokkaHtml/release" data-filterable-set=":ViGRAM_SDK:dokkaHtml/release">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex">
+                        <div><a href="ntrip-timeout.html">ntripTimeout</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-373920030%2FProperties%2F1818122103"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title">
+                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":ViGRAM_SDK:dokkaHtml/release"><a data-name="-373920030%2FProperties%2F1818122103" anchor-label="ntripTimeout" id="-373920030%2FProperties%2F1818122103" data-filterable-set=":ViGRAM_SDK:dokkaHtml/release"></a><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation">@</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.jvm/-jvm-field/index.html"><span class="token annotation">JvmField</span></a></div></div><span class="token keyword"></span><span class="token keyword">var </span><a href="ntrip-timeout.html">ntripTimeout</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">90</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><a data-name="-373920030%2FProperties%2F1818122103" anchor-label="ntripTimeout" id="-373920030%2FProperties%2F1818122103" data-filterable-set=":ViGRAM_SDK:dokkaHtml/release"></a><p class="paragraph">The timeout interval to cancel an NTRIP connection attempt. NTRIP connections might take quite some time to be established, especially with an unreliable internet connection.</p></div></div></div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </div>
-          </div>
-<a data-name="853842907%2FProperties%2F1803641070" anchor-label="serviceIdentifiers" id="853842907%2FProperties%2F1803641070" data-filterable-set=":ViGRAM_SDK:dokkaHtmlPartial/release"></a>
-          <div class="table-row" data-filterable-current=":ViGRAM_SDK:dokkaHtmlPartial/release" data-filterable-set=":ViGRAM_SDK:dokkaHtmlPartial/release">
-            <div class="main-subrow keyValue ">
-              <div class=""><span class="inline-flex">
-                  <div><a href="service-identifiers.html"><span>service</span><wbr><span><span>Identifiers</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="853842907%2FProperties%2F1803641070"></span>
-                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                  </span></span></div>
-              <div>
-                <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ViGRAM_SDK:dokkaHtmlPartial/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.jvm/-jvm-field/index.html"><span class="token annotation builtin">JvmField</span></a></div></div><span class="token keyword"></span><span class="token keyword">val </span><a href="service-identifiers.html">serviceIdentifiers</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">The service identifiers for the bluetooth peripherals to scan for. The service identifiers are used to only scan for peripherals that provide a certain service. By default, <code class="lang-kotlin">`BluetoothService`</code> will only scan for viDoc peripherals.</p></div></div></div>
+<a data-name="-885658155%2FProperties%2F1818122103" anchor-label="peripheralStartTimeout" id="-885658155%2FProperties%2F1818122103" data-filterable-set=":ViGRAM_SDK:dokkaHtml/release"></a>
+                <div class="table-row" data-filterable-current=":ViGRAM_SDK:dokkaHtml/release" data-filterable-set=":ViGRAM_SDK:dokkaHtml/release">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex">
+                        <div><a href="peripheral-start-timeout.html">peripheralStartTimeout</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-885658155%2FProperties%2F1818122103"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title">
+                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":ViGRAM_SDK:dokkaHtml/release"><a data-name="-885658155%2FProperties%2F1818122103" anchor-label="peripheralStartTimeout" id="-885658155%2FProperties%2F1818122103" data-filterable-set=":ViGRAM_SDK:dokkaHtml/release"></a><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation">@</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.jvm/-jvm-field/index.html"><span class="token annotation">JvmField</span></a></div></div><span class="token keyword"></span><span class="token keyword">var </span><a href="peripheral-start-timeout.html">peripheralStartTimeout</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html">Long</a><span class="token operator"> = </span><span class="token constant">500</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><a data-name="-885658155%2FProperties%2F1818122103" anchor-label="peripheralStartTimeout" id="-885658155%2FProperties%2F1818122103" data-filterable-set=":ViGRAM_SDK:dokkaHtml/release"></a><p class="paragraph">The timeout interval to wait during start after the connection has been established and before configuration starts.</p></div></div></div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </div>
-          </div>
-<a data-name="-92052591%2FProperties%2F1803641070" anchor-label="softSendDelayByte" id="-92052591%2FProperties%2F1803641070" data-filterable-set=":ViGRAM_SDK:dokkaHtmlPartial/release"></a>
-          <div class="table-row" data-filterable-current=":ViGRAM_SDK:dokkaHtmlPartial/release" data-filterable-set=":ViGRAM_SDK:dokkaHtmlPartial/release">
-            <div class="main-subrow keyValue ">
-              <div class=""><span class="inline-flex">
-                  <div><a href="soft-send-delay-byte.html"><span>soft</span><wbr><span>Send</span><wbr><span>Delay</span><wbr><span><span>Byte</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-92052591%2FProperties%2F1803641070"></span>
-                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                  </span></span></div>
-              <div>
-                <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ViGRAM_SDK:dokkaHtmlPartial/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.jvm/-jvm-field/index.html"><span class="token annotation builtin">JvmField</span></a></div></div><span class="token keyword"></span><span class="token keyword">var </span><a href="soft-send-delay-byte.html">softSendDelayByte</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html">Long</a></div><div class="brief "><p class="paragraph">Delay between sending firmware bytes, 25 milliseconds recommended.</p></div></div></div>
+<a data-name="853842907%2FProperties%2F1818122103" anchor-label="serviceIdentifiers" id="853842907%2FProperties%2F1818122103" data-filterable-set=":ViGRAM_SDK:dokkaHtml/release"></a>
+                <div class="table-row" data-filterable-current=":ViGRAM_SDK:dokkaHtml/release" data-filterable-set=":ViGRAM_SDK:dokkaHtml/release">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex">
+                        <div><a href="service-identifiers.html">serviceIdentifiers</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="853842907%2FProperties%2F1818122103"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title">
+                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":ViGRAM_SDK:dokkaHtml/release"><a data-name="853842907%2FProperties%2F1818122103" anchor-label="serviceIdentifiers" id="853842907%2FProperties%2F1818122103" data-filterable-set=":ViGRAM_SDK:dokkaHtml/release"></a><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation">@</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.jvm/-jvm-field/index.html"><span class="token annotation">JvmField</span></a></div></div><span class="token keyword"></span><span class="token keyword">val </span><a href="service-identifiers.html">serviceIdentifiers</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">&gt;</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><a data-name="853842907%2FProperties%2F1818122103" anchor-label="serviceIdentifiers" id="853842907%2FProperties%2F1818122103" data-filterable-set=":ViGRAM_SDK:dokkaHtml/release"></a><p class="paragraph">The service identifiers for the bluetooth peripherals to scan for. The service identifiers are used to only scan for peripherals that provide a certain service. By default, <code class="lang-kotlin">`BluetoothService`</code> will only scan for viDoc peripherals.</p></div></div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="-92052591%2FProperties%2F1818122103" anchor-label="softSendDelayByte" id="-92052591%2FProperties%2F1818122103" data-filterable-set=":ViGRAM_SDK:dokkaHtml/release"></a>
+                <div class="table-row" data-filterable-current=":ViGRAM_SDK:dokkaHtml/release" data-filterable-set=":ViGRAM_SDK:dokkaHtml/release">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex">
+                        <div><a href="soft-send-delay-byte.html">softSendDelayByte</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-92052591%2FProperties%2F1818122103"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title">
+                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":ViGRAM_SDK:dokkaHtml/release"><a data-name="-92052591%2FProperties%2F1818122103" anchor-label="softSendDelayByte" id="-92052591%2FProperties%2F1818122103" data-filterable-set=":ViGRAM_SDK:dokkaHtml/release"></a><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation">@</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.jvm/-jvm-field/index.html"><span class="token annotation">JvmField</span></a></div></div><span class="token keyword"></span><span class="token keyword">var </span><a href="soft-send-delay-byte.html">softSendDelayByte</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html">Long</a><span class="token operator"> = </span><span class="token constant">25</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><a data-name="-92052591%2FProperties%2F1818122103" anchor-label="softSendDelayByte" id="-92052591%2FProperties%2F1818122103" data-filterable-set=":ViGRAM_SDK:dokkaHtml/release"></a><p class="paragraph">Delay between sending firmware bytes, 25 milliseconds recommended.</p></div></div></div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
+        <div class="footer"><span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2023 Copyright</span><span class="pull-right"><span>Generated by </span><a href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span></div>
       </div>
     </div>
-  </div>
-</div>
-      <div class="footer">
-        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2023 Copyright</span><span class="pull-right"><span>Generated by </span><a href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
-      </div>
-    </div>
-</div>
-</body>
+  </body>
 </html>
 

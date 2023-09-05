@@ -8,13 +8,20 @@ VigramSDK is a library to connect your app to viDoc to retrieve location data an
 For more information, you can view the documentation using [this](https://vigram-gmbh.github.io/SDK_Android_viDoc_Distribution/ViGRAM_SDK/index.html) 
 
 ## Topics
-### What is the new on beta
 
-[1.2.1-beta2.1](readme_1.2.1-beta2.1.md)
+### What is the new on release
+
+[1.2.0](readme_1.2.0.md)
+
+### What is the new on beta
 
 [1.2.1-beta2.2](readme_1.2.1-beta2.2.md)
 
 [1.2.1-beta2.3](readme_1.2.1-beta2.3.md)
+
+[1.2.1-beta2.1](readme_1.2.1-beta2.1.md)
+
+
 
 ### General
 
