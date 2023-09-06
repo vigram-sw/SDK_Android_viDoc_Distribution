@@ -12,6 +12,7 @@ For more information, you can view the documentation using [this](https://vigram
 ### What is the new on release
 
 [1.2.0](readme_1.2.0.md)
+[1.2.2](readme_1.2.2.md)
 
 ### What is the new on beta
 
