@@ -1,1 +1,1 @@
-sourceset_dependencies = '{":ViGRAM_SDK:dokkaHtmlPartial/debug":[],":ViGRAM_SDK:dokkaHtmlPartial/main":[],":ViGRAM_SDK:dokkaHtmlPartial/release":[]}'
+sourceset_dependencies='{":ViGRAM_SDK:dokkaHtml/androidTestRelease":[],":ViGRAM_SDK:dokkaHtml/debug":[],":ViGRAM_SDK:dokkaHtml/main":[],":ViGRAM_SDK:dokkaHtml/release":[],":ViGRAM_SDK:dokkaHtml/testFixtures":[],":ViGRAM_SDK:dokkaHtml/testFixturesDebug":[],":ViGRAM_SDK:dokkaHtml/testFixturesRelease":[]}'
