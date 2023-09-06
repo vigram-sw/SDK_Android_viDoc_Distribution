@@ -12,11 +12,12 @@ For more information, you can view the documentation using [this](https://vigram
 ### What is the new
 
 
+[1.2.1-beta2.1](readme_1.2.1-beta2.1.md)
+
 [1.2.1-beta2.2](readme_1.2.1-beta2.2.md)
 
 [1.2.1-beta2.3](readme_1.2.1-beta2.3.md)
 
-[1.2.1-beta2.1](readme_1.2.1-beta2.1.md)
 
 [1.2.3](readme_1.2.3.md)
 
