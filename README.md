@@ -1,7 +1,4 @@
-# ``VigramSDK`
-
-##
-
+# `VigramSDK`
 
 VigramSDK is a library to connect your app to viDoc to retrieve location data and perform laser distance recordings.
 
@@ -9,11 +6,11 @@ For more information, you can view the documentation using [this](https://vigram
 
 ## Topics
 ### What is the new
-[1.2.4](readme_1.2.4.md)
-[1.2.3](readme_1.2.3.md)
-[1.2.1-beta2.3](readme_1.2.1-beta2.3.md)
-[1.2.1-beta2.2](readme_1.2.1-beta2.2.md)
-[1.2.1-beta2.1](readme_1.2.1-beta2.1.md)
+- [1.2.4](readme_1.2.4.md)
+- [1.2.3](readme_1.2.3.md)
+- [1.2.1-beta2.3](readme_1.2.1-beta2.3.md)
+- [1.2.1-beta2.2](readme_1.2.1-beta2.2.md)
+- [1.2.1-beta2.1](readme_1.2.1-beta2.1.md)
 
 
 ### General
