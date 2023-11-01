@@ -12,6 +12,32 @@ For more information, you can view the documentation using [this](https://vigram
 - [1.2.1-beta2.2](readme_1.2.1-beta2.2.md)
 - [1.2.1-beta2.1](readme_1.2.1-beta2.1.md)
 
+## Installation
+
+<b> Step 1. </b> Add the token to \$HOME/.gradle/gradle.properties
+
+```
+authToken= 'jp_pn65lpuuc9hmdvoj7b7egl63r4'
+```
+
+<b> Step 2. </b> Add it in your root build.gradle at the end of repositories:
+
+```
+ allprojects {
+    repositories {
+        ...
+        maven {
+            url "https://jitpack.io"
+            credentials { username authToken }
+        }
+    }
+ }
+```
+
+### <p style="text-align: center;font-size:1.5em;"> Gradle module app </p>
+```
+implementation 'com.gitlab.viapps:vigram_sdk:1.2.4'
+```
 
 ### General
 
