@@ -6,7 +6,9 @@ VigramSDK is a library to connect your app to viDoc to retrieve location data an
 
 For more information, you can view the documentation using this 
 
-## What is the new on 1.2.0-beta2.1
+## What is the new on 1.2.4
+### Single Point Recording Service:
+The value measured by the front laser above 20 meters and the value measured by the bottom laser above 40 meters is now considered an error
 
 ### Vigram
 
