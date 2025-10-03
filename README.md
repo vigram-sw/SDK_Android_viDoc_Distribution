@@ -6,6 +6,7 @@ For more information, you can view the documentation using [this](https://vigram
 
 ## Topics
 ### What is the new
+- [1.2.5](readme_1.2.5.md)
 - [1.2.4](readme_1.2.4.md)
 - [1.2.3](readme_1.2.3.md)
 - [1.2.1-beta2.3](readme_1.2.1-beta2.3.md)
@@ -14,29 +15,52 @@ For more information, you can view the documentation using [this](https://vigram
 
 ## Installation
 
-<b> Step 1. </b> Add the token to \$HOME/.gradle/gradle.properties
+<b> Step 1. </b> Create a Personal Access Token (PAT)
 
-```
-authToken= 'jp_pn65lpuuc9hmdvoj7b7egl63r4'
+
+GitHub requires a token for authentication when working with GitHub Packages.
+
+1. Go to [GitHub Settings](https://github.com/settings/tokens).
+2. Click **Generate new token**.
+3. Give the token a description, for example `"Gradle access"`.
+4. Select the **`read:packages`** scope to access public packages.
+5. Click **Generate token** and save the value.
+
+<b> Step 2. </b> Add variables for GitHub Packages.
+
+Insert the following lines into `gradle.properties`:
+
+```properties
+# GitHub username
+GITHUB_ACTOR=
+
+# Personal Access Token (PAT) for GitHub Packages
+GITHUB_TOKEN=
 ```
 
-<b> Step 2. </b> Add it in your root build.gradle at the end of repositories:
+<b> Step 3. </b> Configure the repository in Gradle.
 
-```
- allprojects {
-    repositories {
-        ...
-        maven {
-            url "https://jitpack.io"
-            credentials { username authToken }
+In your project's `settings.gradle` or `build.gradle`, add the repository:
+
+```gradle
+repositories {
+    maven {
+        url = uri("https://maven.pkg.github.com/vigram-sw/SDK_Android_viDoc_Distribution")
+        credentials {
+            username = GITHUB_ACTOR
+            password = GITHUB_TOKEN
         }
     }
- }
+}
 ```
 
-### <p style="text-align: center;font-size:1.5em;"> Gradle module app </p>
-```
-implementation 'com.gitlab.viapps:vigram_sdk:1.2.4'
+<b> Step 4. </b> Add the dependency
+In your `app/build.gradle`, add the library dependency:
+
+```gradle
+dependencies {
+    implementation 'com.vigram:sdk:X.Y.Z'
+}
 ```
 
 ### General
