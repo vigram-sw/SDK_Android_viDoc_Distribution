@@ -1,0 +1,29 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+    }
+}
+
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.PREFER_SETTINGS)
+    repositories {
+        google()
+        mavenCentral()
+        maven {
+            def props = new Properties()
+            def propsFile = file("${rootDir}/local.properties")
+            if (propsFile.exists()) props.load(propsFile.newDataInputStream())
+
+            url = uri("https://maven.pkg.github.com/vigram-sw/SDK_Android_viDoc_Distribution")
+            credentials {
+                username = props.getProperty("API_KEY") ?: System.getenv("API_KEY")
+                password = props.getProperty("API_SECRET") ?: System.getenv("API_SECRET")
+            }
+        }
+    }
+}
+
+rootProject.name = "ViGRAM_SDK_DEMO"
+include ':app'
