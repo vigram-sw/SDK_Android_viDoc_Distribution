@@ -1,9 +1,6 @@
 # ``VigramSDK``
 
-##
-![VigramSDKLogoDocumentation](https://vigram.com/wp-content/uploads/2021/04/vigram_smart_documentation_compressed_black.svg)
-
-## What is the new on 1.2.5
+## What is the new on 1.2.7
 
 
 ### Authentication

@@ -6,7 +6,7 @@ For more information, you can view the documentation using [this](https://vigram
 
 ## Topics
 ### What is the new
-- [1.2.5](readme_1.2.5.md)
+- [1.2.7](readme_1.2.7.md)
 - [1.2.4](readme_1.2.4.md)
 - [1.2.3](readme_1.2.3.md)
 - [1.2.1-beta2.3](readme_1.2.1-beta2.3.md)
